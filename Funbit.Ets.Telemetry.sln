@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funbit.Ets.Telemetry.Server", "Funbit.Ets.Telemetry.Server\Funbit.Ets.Telemetry.Server.csproj", "{5DDDD979-7911-4E6E-877D-4674E3DD7E62}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Android = Debug|Android
+		Debug|Any CPU = Debug|Any CPU
+		Debug|iOS = Debug|iOS
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Windows Phone (Universal) = Debug|Windows Phone (Universal)
+		Debug|Windows Phone 8 = Debug|Windows Phone 8
+		Debug|Windows-AnyCPU = Debug|Windows-AnyCPU
+		Debug|Windows-ARM = Debug|Windows-ARM
+		Debug|Windows-x64 = Debug|Windows-x64
+		Debug|Windows-x86 = Debug|Windows-x86
+		Distribution|Android = Distribution|Android
+		Distribution|Any CPU = Distribution|Any CPU
+		Distribution|iOS = Distribution|iOS
+		Distribution|Mixed Platforms = Distribution|Mixed Platforms
+		Distribution|Windows Phone (Universal) = Distribution|Windows Phone (Universal)
+		Distribution|Windows Phone 8 = Distribution|Windows Phone 8
+		Distribution|Windows-AnyCPU = Distribution|Windows-AnyCPU
+		Distribution|Windows-ARM = Distribution|Windows-ARM
+		Distribution|Windows-x64 = Distribution|Windows-x64
+		Distribution|Windows-x86 = Distribution|Windows-x86
+		Release|Android = Release|Android
+		Release|Any CPU = Release|Any CPU
+		Release|iOS = Release|iOS
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Windows Phone (Universal) = Release|Windows Phone (Universal)
+		Release|Windows Phone 8 = Release|Windows Phone 8
+		Release|Windows-AnyCPU = Release|Windows-AnyCPU
+		Release|Windows-ARM = Release|Windows-ARM
+		Release|Windows-x64 = Release|Windows-x64
+		Release|Windows-x86 = Release|Windows-x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Debug|Android.ActiveCfg = Debug|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Debug|iOS.ActiveCfg = Debug|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Debug|Windows Phone (Universal).ActiveCfg = Debug|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Debug|Windows Phone 8.ActiveCfg = Debug|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Debug|Windows-AnyCPU.ActiveCfg = Debug|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Debug|Windows-ARM.ActiveCfg = Debug|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Debug|Windows-x64.ActiveCfg = Debug|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Debug|Windows-x86.ActiveCfg = Debug|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Distribution|Android.ActiveCfg = Debug|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Distribution|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Distribution|Any CPU.Build.0 = Debug|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Distribution|iOS.ActiveCfg = Debug|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Distribution|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Distribution|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Distribution|Windows Phone (Universal).ActiveCfg = Debug|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Distribution|Windows Phone 8.ActiveCfg = Debug|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Distribution|Windows-AnyCPU.ActiveCfg = Debug|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Distribution|Windows-ARM.ActiveCfg = Debug|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Distribution|Windows-x64.ActiveCfg = Debug|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Distribution|Windows-x86.ActiveCfg = Debug|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Release|Android.ActiveCfg = Release|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Release|iOS.ActiveCfg = Release|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Release|Windows Phone (Universal).ActiveCfg = Release|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Release|Windows Phone 8.ActiveCfg = Release|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Release|Windows-AnyCPU.ActiveCfg = Release|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Release|Windows-ARM.ActiveCfg = Release|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Release|Windows-x64.ActiveCfg = Release|Any CPU
+		{5DDDD979-7911-4E6E-877D-4674E3DD7E62}.Release|Windows-x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E292EC82-7944-4542-B92C-32025EE57AFE}
+	EndGlobalSection
+EndGlobal
