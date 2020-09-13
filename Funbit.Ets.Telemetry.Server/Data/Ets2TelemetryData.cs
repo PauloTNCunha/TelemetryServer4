@@ -383,6 +383,7 @@ namespace Funbit.Ets.Telemetry.Server.Data
         {
             get
             {
+                if (ForwardGears == 0) return null;
                 float[] array = _rawData.Struct.gearRatiosForward;
                 Array.Resize(ref array, ForwardGears);
                 return array;
@@ -392,12 +393,14 @@ namespace Funbit.Ets.Telemetry.Server.Data
         {
             get 
             {
+                if (ReverseGears == 0) return null;
                 float[] array = _rawData.Struct.gearRatiosReverse;
                 Array.Resize(ref array, ReverseGears);
                 return array;
             }
         }
-        public double TyreCircumference => 
+        public double TyreCircumference =>
+                _rawData.Struct.truckWheelPowered == null ? 0 :
                 ((_rawData.Struct.truckWheelCount > 4) ?
                 (_rawData.Struct.truckWheelPowered[4] == 1) ?
                     _rawData.Struct.truckWheelRadius[4] :
@@ -407,10 +410,11 @@ namespace Funbit.Ets.Telemetry.Server.Data
         {
             get
             {
-                int[] array = new int[ForwardGears];
-                for (int i = 0; i < array.Length; i++)
+                if (ForwardGears == 0) return null;
+                int[] array = new int[ForwardGears + 1];
+                for (int i = 1; i < array.Length; i++)
                 {
-                    array[i] = (int)Math.Round(90 * TyreCircumference / (DifferentialRatio * ForwardGearRatios[i]));
+                    array[i] = (int)Math.Round(90 * TyreCircumference / (DifferentialRatio * ForwardGearRatios[i - 1]));
                 }
                 return array;
             }
@@ -419,10 +423,11 @@ namespace Funbit.Ets.Telemetry.Server.Data
         {
             get
             {
-                int[] array = new int[ReverseGears];
-                for (int i = 0; i < array.Length; i++)
+                if (ReverseGears == 0) return null;
+                int[] array = new int[ReverseGears + 1];
+                for (int i = 1; i < array.Length; i++)
                 {
-                    array[i] = (int)Math.Round(90 * TyreCircumference / (DifferentialRatio * ReverseGearRatios[i]));
+                    array[i] = (int)Math.Round(90 * TyreCircumference / (DifferentialRatio * ReverseGearRatios[i - 1]));
                 }
                 return array;
             }
@@ -431,10 +436,11 @@ namespace Funbit.Ets.Telemetry.Server.Data
         {
             get
             {
-                int[] array = new int[ForwardGears];
-                for (int i = 0; i < array.Length; i++)
+                if (ForwardGears == 0) return null;
+                int[] array = new int[ForwardGears + 1];
+                for (int i = 1; i < array.Length; i++)
                 {
-                    array[i] = (int)Math.Round(60 * Math.Abs(_rawData.Struct.speed) * DifferentialRatio * ForwardGearRatios[i] / TyreCircumference);
+                    array[i] = (int)Math.Round(60 * Math.Abs(_rawData.Struct.speed) * DifferentialRatio * ForwardGearRatios[i - 1] / TyreCircumference);
                 }
                 return array;
             }
@@ -443,10 +449,11 @@ namespace Funbit.Ets.Telemetry.Server.Data
         {
             get
             {
-                int[] array = new int[ReverseGears];
-                for (int i = 0; i < array.Length; i++)
+                if (ReverseGears == 0) return null;
+                int[] array = new int[ReverseGears + 1];
+                for (int i = 1; i < array.Length; i++)
                 {
-                    array[i] = (int)Math.Round(60 * Math.Abs(_rawData.Struct.speed) * DifferentialRatio * ReverseGearRatios[i] / TyreCircumference);
+                    array[i] = (int)Math.Round(60 * Math.Abs(_rawData.Struct.speed) * DifferentialRatio * ReverseGearRatios[i - 1] / TyreCircumference);
                 }
                 return array;
             }
@@ -500,7 +507,7 @@ namespace Funbit.Ets.Telemetry.Server.Data
                 int gap = 1500;
                 int[] array;
                 if (_rawData.Struct.speed > 0) { array = ForwardRpmAtCurrentSpeed; } else { array = ReverseRpmAtCurrentSpeed; }
-                for (int i = 0; i < array.Length; i++)
+                for (int i = 1; i < array.Length; i++)
                 {
                     if (array[i] < 0)
                     {
@@ -524,7 +531,7 @@ namespace Funbit.Ets.Telemetry.Server.Data
                 return r;
             }
         }
-        public string BestGearName => BestGear < 0 ? ReverseGearNames[Math.Abs(BestGear)] : ForwardGearNames[BestGear];
+        public string BestGearName => ReverseGearNames == null ? "" : BestGear < 0 ? ReverseGearNames[Math.Abs(BestGear)] : ForwardGearNames[BestGear];
     }
 
     class Ets2ShifterSlot : IEts2ShifterSlot
