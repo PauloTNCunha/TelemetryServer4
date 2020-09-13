@@ -301,15 +301,14 @@ namespace Funbit.Ets.Telemetry.Server.Data
         {
             _rawData = rawData;
         }
+
         public string Type => Ets2TelemetryData.BytesToString(_rawData.Struct.shifterType);
         public int ForwardGears => (int)_rawData.Struct.gearsForward;
-        public int ReverseGears => (int)_rawData.Struct.gearsReverse;
-        public int Gear => _rawData.Struct.gear;
-        public int DisplayedGear => _rawData.Struct.displayedGear;
-        private string[] ForwardGearNames
+        public string[] ForwardGearNames
         {
             get
             {
+                if (ForwardGears == 0) return null;
                 string[] fwGears = new string[ForwardGears + 1];
                 switch (ForwardGears)
                 {
@@ -348,10 +347,12 @@ namespace Funbit.Ets.Telemetry.Server.Data
                 return fwGears;
             }
         }
-        private string[] ReverseGearNames
+        public int ReverseGears => _rawData.Struct.gearsReverse;
+        public string[] ReverseGearNames
         {
             get
             {
+                if (ReverseGears == 0) return null;
                 string[] rvGears = new string[ReverseGears + 1];
                 switch (ReverseGears)
                 {
@@ -376,27 +377,87 @@ namespace Funbit.Ets.Telemetry.Server.Data
                 return rvGears;
             }
         }
-        public string DisplayedGearName => (DisplayedGear < 0) 
-            ? ReverseGearNames[Math.Abs(DisplayedGear)] 
-            : ForwardGearNames[DisplayedGear];
+
         public float DifferentialRatio => (float)_rawData.Struct.gearDifferential;
-        public float GearRatio => (Gear == 0) ? 0 : (Gear < 0)
-                ? (float)_rawData.Struct.gearRatiosReverse[Math.Abs(Gear) - 1]
-                : (float)_rawData.Struct.gearRatiosForward[Gear - 1];
-        public int SlotCount => _rawData.Struct.hshifterPosition == null ? 0 : (int)_rawData.Struct.hshifterPosition[_rawData.Struct.hshifterPosition.Length - 1] + 1;
-        public int SelectorCount => _rawData.Struct.selectorCount == null ? 0 : (int)Math.Pow(2, _rawData.Struct.selectorCount);
-        public int Slot => (int)_rawData.Struct.shifterSlot;
-        public int Selector
+        public float[] ForwardGearRatios
         {
             get
             {
-                int selectors = 0;
-                if (_rawData.Struct.shifterToggle != null)
-                    for (int i = 0; i < _rawData.Struct.shifterToggle.Length; i++)
-                        selectors += (int)Math.Pow(2, (double)i) * ((int)Math.Pow(2, (double)_rawData.Struct.shifterToggle[i]) - 1);
-                return selectors;
+                float[] array = _rawData.Struct.gearRatiosForward;
+                Array.Resize(ref array, ForwardGears);
+                return array;
             }
         }
+        public float[] ReverseGearRatios 
+        {
+            get 
+            {
+                float[] array = _rawData.Struct.gearRatiosReverse;
+                Array.Resize(ref array, ReverseGears);
+                return array;
+            }
+        }
+        public double TyreCircumference => 
+                ((_rawData.Struct.truckWheelCount > 4) ?
+                (_rawData.Struct.truckWheelPowered[4] == 1) ?
+                    _rawData.Struct.truckWheelRadius[4] :
+                    _rawData.Struct.truckWheelRadius[2] :
+                    _rawData.Struct.truckWheelRadius[2]) * 2 * Math.PI ;
+        public int[] ForwardSpeedAt1500Rpm
+        {
+            get
+            {
+                int[] array = new int[ForwardGears];
+                for (int i = 0; i < array.Length; i++)
+                {
+                    array[i] = (int)Math.Round(90 * TyreCircumference / (DifferentialRatio * ForwardGearRatios[i]));
+                }
+                return array;
+            }
+        }
+        public int[] ReverseSpeedAt1500Rpm
+        {
+            get
+            {
+                int[] array = new int[ReverseGears];
+                for (int i = 0; i < array.Length; i++)
+                {
+                    array[i] = (int)Math.Round(90 * TyreCircumference / (DifferentialRatio * ReverseGearRatios[i]));
+                }
+                return array;
+            }
+        }
+        public int[] ForwardRpmAtCurrentSpeed
+        {
+            get
+            {
+                int[] array = new int[ForwardGears];
+                for (int i = 0; i < array.Length; i++)
+                {
+                    array[i] = (int)Math.Round(60 * Math.Abs(_rawData.Struct.speed) * DifferentialRatio * ForwardGearRatios[i] / TyreCircumference);
+                }
+                return array;
+            }
+        }
+        public int[] ReverseRpmAtCurrentSpeed
+        {
+            get
+            {
+                int[] array = new int[ReverseGears];
+                for (int i = 0; i < array.Length; i++)
+                {
+                    array[i] = (int)Math.Round(60 * Math.Abs(_rawData.Struct.speed) * DifferentialRatio * ReverseGearRatios[i] / TyreCircumference);
+                }
+                return array;
+            }
+        }
+
+        //public uint[] HshifterPosition => _rawData.Struct.hshifterPosition;
+        //public uint[] HshifterBitmask => _rawData.Struct.hshifterBitmask;
+        //public int[] HshifterResulting => _rawData.Struct.hshifterResulting;
+
+        public int SelectorCount => _rawData.Struct.selectorCount == 0 ? 0 : (int)Math.Pow(2, _rawData.Struct.selectorCount);
+        public int SlotCount => _rawData.Struct.hshifterPosition == null ? 0 : (int)_rawData.Struct.hshifterPosition[_rawData.Struct.hshifterPosition.Length - 1] + 1;
         public IEts2ShifterSlot[] Slots
         {
             get
@@ -409,56 +470,61 @@ namespace Funbit.Ets.Telemetry.Server.Data
             }
         }
 
-        private int[] BestG
-        { 
-            get 
+        public int Gear => _rawData.Struct.gear;
+        public int DisplayedGear => _rawData.Struct.displayedGear;
+        public string DisplayedGearName => (DisplayedGear < 0)
+            ? ReverseGearNames == null ? "" : ReverseGearNames[Math.Abs(DisplayedGear)]
+            : ForwardGearNames == null ? "" : ForwardGearNames[DisplayedGear];
+        public float GearRatio => (Gear == 0) ? 0 : (Gear < 0)
+                ? (float)_rawData.Struct.gearRatiosReverse[Math.Abs(Gear) - 1]
+                : (float)_rawData.Struct.gearRatiosForward[Gear - 1];
+        public int Slot => (int)_rawData.Struct.shifterSlot;
+        public int Selector
+        {
+            get
             {
-                int r;
-                int gap=1500;
-                int[] gear = { 0, 0 };
-                if (Gear == 0) return gear;
-                
-                for (int slot = 0; slot < Slots.Length; slot++)
-                {
-                    for (int selector = 0; selector < SelectorCount; selector++)
-                    {
-                        if (Math.Sign(Slots[slot].Seletors[selector].Gear) != 0) {
-                            r = Slots[slot].Seletors[selector].RpmAtCurrentSpeed;
-                            if (Gear < 0) {
-                                if (gap > Math.Abs(r + 1300))
-                                {
-                                    gear[0] = slot;
-                                    gear[1] = selector;
-                                    gap = Math.Abs(r + 1300);
-                                }
-                            }
-                            else {
-                                if (gap > Math.Abs(r - 1300))
-                                {
-                                    gear[0] = slot;
-                                    gear[1] = selector;
-                                    gap = Math.Abs(r - 1300);
-                                }
-
-                            }
-                        }
-                    }
-
-                }
-                return gear;
+                int selectors = 0;
+                if (_rawData.Struct.shifterToggle != null)
+                    for (int i = 0; i < _rawData.Struct.shifterToggle.Length; i++)
+                        selectors += (int)Math.Pow(2, (double)i) * ((int)Math.Pow(2, (double)_rawData.Struct.shifterToggle[i]) - 1);
+                return selectors;
             }
         }
 
-        public int BestGear => Slots == null ? 0 : (int)Slots[BestG[0]].Seletors[BestG[1]].Gear;
-        public string BestGearName => Slots == null ? "" : (string)Slots[BestG[0]].Seletors[BestG[1]].GearName;
+        public int BestGear
+        { 
+            get 
+            {
+                if (_rawData.Struct.speed == 0) return 0;
+                int r = 0;
+                int gap = 1500;
+                int[] array;
+                if (_rawData.Struct.speed > 0) { array = ForwardRpmAtCurrentSpeed; } else { array = ReverseRpmAtCurrentSpeed; }
+                for (int i = 0; i < array.Length; i++)
+                {
+                    if (array[i] < 0)
+                    {
+                        if (gap > Math.Abs(array[i] + 1300))
+                        {
+                            r = i;
+                            gap = Math.Abs(array[i] + 1300);
+                        }
+                    }
+                    else
+                    {
+                        if (gap > Math.Abs(array[i] - 1300))
+                        {
+                            r = i;
+                            gap = Math.Abs(array[i] - 1300);
+                        }
 
-        public float[] GearRatiosForward => (float[])_rawData.Struct.gearRatiosForward;
-        public float[] GearRatiosReverse => (float[])_rawData.Struct.gearRatiosReverse;
-        //public uint[] HshifterPosition => _rawData.Struct.hshifterPosition;
-        //public uint[] HshifterBitmask => _rawData.Struct.hshifterBitmask;
-        //public int[] HshifterResulting => _rawData.Struct.hshifterResulting;
+                    }
+                }
 
-
+                return r;
+            }
+        }
+        public string BestGearName => BestGear < 0 ? ReverseGearNames[Math.Abs(BestGear)] : ForwardGearNames[BestGear];
     }
 
     class Ets2ShifterSlot : IEts2ShifterSlot
@@ -482,28 +548,10 @@ namespace Funbit.Ets.Telemetry.Server.Data
             Selector = (int)rawData.Struct.hshifterBitmask[i];
             Gear = rawData.Struct.hshifterResulting[i];
             GearName = (Gear < 0) ? rvGearNames[Math.Abs(Gear)] : fwGearNames[Gear];
-            GearRatio = (Gear == 0) ? 0 : (Gear < 0)
-                ? (float)rawData.Struct.gearRatiosReverse[Math.Abs(Gear)-1]
-                : (float)rawData.Struct.gearRatiosForward[Gear-1];
-            double tc = 2 * Math.PI; 
-            if (rawData.Struct.truckWheelCount > 4)
-                tc *= rawData.Struct.truckWheelPowered[4] == 1
-                    ? rawData.Struct.truckWheelRadius[4]
-                    : rawData.Struct.truckWheelRadius[2];
-            else
-                tc *= rawData.Struct.truckWheelRadius[2];
-            if (GearRatio != 0) 
-            {
-                SpeedAt1500Rpm = (int)Math.Round(90 * tc / (rawData.Struct.gearDifferential * GearRatio));
-                RpmAtCurrentSpeed = (int)Math.Round(60 * Math.Abs(rawData.Struct.speed) * rawData.Struct.gearDifferential * GearRatio / tc);
-            }
         }
         public int Selector { get; private set; }
         public int Gear { get; private set; }
         public string GearName { get; private set; }
-        public float GearRatio { get; private set; }
-        public int SpeedAt1500Rpm { get; private set; }
-        public int RpmAtCurrentSpeed { get; private set; }
     }
 
 

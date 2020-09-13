@@ -1064,10 +1064,77 @@ namespace Funbit.Ets.Telemetry.Server.Data
         /// </summary>
         int ForwardGears { get; }
         /// <summary>
+        /// Forward gear names.
+        /// Example: ["N","CL","CH","1L","1H","2L","2H","3L","3H","4L","4H","5L","5H","6L","6H","7L","7H","8L","8H"]
+        /// </summary>
+        string[] ForwardGearNames { get; }
+        /// <summary>
         /// Number of reverse gears on undamaged truck.
         /// Example: 2
         /// </summary>
         int ReverseGears { get; }
+        /// <summary>
+        /// Reverse gear names.
+        /// Example: ["N","R1L","R1H","R2L","R2H"]
+        /// </summary>
+        string[] ReverseGearNames { get; }
+        /// <summary>
+        /// Differential ratio of the truck.
+        /// Example: 3.25
+        /// </summary>
+        float DifferentialRatio { get; }
+        /// <summary>
+        /// Differential ratio of all forward gears.
+        /// Example: [14.4,12.29,8.56,7.3,6.05,5.16,4.38,3.74,3.2,2.73,2.29,1.95,1.62,1.38,1.17,1.0,0.86,0.73]
+        /// </summary>
+        float[] ForwardGearRatios { get; }
+        /// <summary>
+        /// Differential ratio of all reverse gears.
+        /// Example: [-15.06,-12.85,-4.03,-3.43]
+        /// </summary>
+        float[] ReverseGearRatios { get; }
+        /// <summary>
+        /// Circumference of the powered tyre.
+        /// Example: 3.1808698271960143
+        /// </summary>
+        double TyreCircumference { get; }
+        /// <summary>
+        /// Speed ​​reached by forward gear at 1500 rpm.
+        /// Example: [5,6,8,10,12,13,16,19,22,26,30,36,43,50,60,70,81,95]
+        /// </summary>
+        int[] ForwardSpeedAt1500Rpm { get; }
+        /// <summary>
+        /// Speed ​​reached by reverse gear at 1500 rpm.
+        /// Example: [-5,-5,-17,-20]
+        /// </summary>
+        int[] ReverseSpeedAt1500Rpm { get; }
+        /// <summary>
+        /// Engine RPM for all forward gears at current speed.
+        /// Example: [6410,5471,3810,3249,2693,2297,1950,1665,1424,1215,1019,868,721,614,521,445,383,325]
+        /// </summary>
+        int[] ForwardRpmAtCurrentSpeed { get; }
+        /// <summary>
+        /// Engine RPM for all reverse gears at current speed.
+        /// Example: [-6704,-5720,-1794,-1527]
+        /// </summary>
+        int[] ReverseRpmAtCurrentSpeed { get; }
+        /// <summary>
+        /// Number of selectors in the h-shifter.
+        /// Example: 4
+        /// </summary>
+        int SelectorCount { get; }
+        /// <summary>
+        /// Number of slots in the h-shifter.
+        /// Example: 7
+        /// </summary>
+        int SlotCount { get; }
+        /// <summary>
+        /// All available h-shifter handle.
+        /// Mapping to physical position of the handle depends on input setup.
+        /// Example: Slots[7]
+        /// </summary>
+        IEts2ShifterSlot[] Slots { get; }
+
         /// <summary>
         /// Gear that is currently selected in the engine.
         /// Positive values reflect forward gears, negative - reverse.
@@ -1087,25 +1154,11 @@ namespace Funbit.Ets.Telemetry.Server.Data
         /// </summary>
         string DisplayedGearName { get; }
         /// <summary>
-        /// Differential ratio of the truck.
-        /// Example: 3.25
-        /// </summary>
-        float DifferentialRatio { get; }
-        /// <summary>
-        /// Actual gera ratios for the selected gear.
-        /// Example: 8.51
+        /// Gear selected when requirements for this h-shifter slot are meet.
+        /// Example: 18
         /// </summary>
         float GearRatio { get; }
-        /// <summary>
-        /// Number of slots in the h-shifter.
-        /// Example: 7
-        /// </summary>
-        int SlotCount { get; }
-        /// <summary>
-        /// Number of selectors in the h-shifter.
-        /// Example: 4
-        /// </summary>
-        int SelectorCount { get; }
+
         /// <summary>
         /// Gearbox slot the h-shifter handle is currently in.
         /// 0 means that no slot is selected.
@@ -1118,12 +1171,7 @@ namespace Funbit.Ets.Telemetry.Server.Data
         /// Example: 3
         /// </summary>
         int Selector { get; }
-        /// <summary>
-        /// All available h-shifter handle.
-        /// Mapping to physical position of the handle depends on input setup.
-        /// Example: Slots[7]
-        /// </summary>
-        IEts2ShifterSlot[] Slots { get; }
+
         /// <summary>
         /// The best gear to be selected.
         /// Example: 14
@@ -1166,27 +1214,10 @@ namespace Funbit.Ets.Telemetry.Server.Data
         /// </summary>
         int Gear { get; }
         /// <summary>
-        /// Gear selected when requirements for this h-shifter slot are meet.
-        /// Example: 18
+        /// Gear's name when requirements for this h-shifter slot are meet.
+        /// Example: 8H
         /// </summary>
         string GearName { get; }
-        /// <summary>
-        /// Gear selected when requirements for this h-shifter slot are meet.
-        /// Example: 18
-        /// </summary>
-        float GearRatio { get; }
-        /// <summary>
-        /// The velocity the wheels would have if engine rotation were 1500 rpm, in kilometers per hour.
-        /// Ideal Velocity = (Engine Rotation* Tyre Circumference) / (Differention Ratio * Gear Ratio)
-        /// Example: 88.27
-        /// </summary>
-        int SpeedAt1500Rpm { get; }
-        /// <summary>
-        /// The engine rotation if the gear is selected at the current speed.
-        /// Engine Rotaion = Current Velocity* (Differntion Ratio * Gear Ratio) / Tyre Concumference
-        /// Example: 1876
-        /// </summary>
-        int RpmAtCurrentSpeed { get; }
     }
 
 }
