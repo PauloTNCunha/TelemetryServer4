@@ -1,0 +1,366 @@
+﻿/*
+    CSS naming convention:
+
+    - Dashboard core script maps all telemetry data properties to respective class names,
+      so truck's speed will be .truck-speed and current gear is .truck-gear
+      (see complete reference in Telemetry.md markdown file).
+    - All boolean telemetry properties will have a special ".yes" class added
+      when the value is true (will be removed if value is false).
+    - When dashboard core script updates DOM it will always add
+      data-value attribute containing current value, so you
+      can use it to have custom css selectors based on the actual data
+      (for example, this skin uses .truck-gear[data-value="N"] to define
+      different style for neutral or reverse gear, see below).
+
+    For more information go to home page: https://github.com/Funbit/ets2-telemetry-server
+
+*/
+
+/*animates*/
+@keyframes RedAlert {
+    0%   { background-color: rgba(0, 0, 0, 0.00); }
+    50% { background-color: rgba(0, 0, 0, 0.00); }
+    75% { background-color: rgba(170, 0, 0, 1.00); }
+    100% { background-color: rgba(0, 0, 0, 0.00); }
+}
+@keyframes YellowAlert {
+    0%   { background-color: rgba(0, 0, 0, 0.00); }
+    50% { background-color:rgba(0, 0, 0, 0.00); }
+    75% { background-color: rgba(170, 170, 0, 1.00); }
+    100% { background-color: rgba(0, 0, 0, 0.00); }
+}
+
+/*top classes*/
+body {
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+    background-color: #0D222D;
+    font-family: sans-serif;
+ 
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #cf9316;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #e1b04c;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #fdd279;
+    }
+
+.dashboard {
+    background-color: #000;
+    color: #f0e6d2;
+    font-size: 75px;
+}
+hr {
+    border-width: thick;
+    font-size: 5px;
+}
+tr {
+    
+}
+th {
+    color: #f6c769;
+}
+td {
+    padding-left: 30px;
+}
+g {
+    display: inline;
+}
+
+/* tables*/
+table.Title {
+    font-size: 100px;
+    border-bottom: 10px solid #cf9316;
+    border-radius: 30px;
+    height: 180px;
+    width: 100%;
+    table-layout: fixed;
+}
+th.Now {
+    color: #cf9316;
+    text-align: left;
+    width: 300px;
+}
+th.Title {
+    text-align: center;
+}
+th.Estimated {
+    color: #cf9316;
+    text-align: right;
+    width: 300px;
+}
+
+/*Principal*/
+div.Principal {
+    visibility: visible;
+    position: absolute;
+    top: 0px;
+    line-height: 1;
+}
+table.Principal {
+    table-layout: fixed;
+    width: 100%;
+}
+tr.Principal {
+    border-bottom: 10px solid #f0e6d2;
+    border-radius: 30px;
+}
+
+th.Principal,
+th.PrincipalSpeed {
+    text-align: right;
+}
+th.PrincipalSpeed {
+    color: #cf9316;
+}
+td.Principal,
+td.PrincipalDestiny,
+td.PrincipalDistance,
+td.PrincipalRemaining,
+td.PrincipalFatigue,
+td.PrincipalStops,
+td.PrincipalSpeed,
+td.PrincipalDamage,
+td.PrincipalMessage,
+td.PrincipalSpeedLimit {
+    line-height: 1;
+    color: #f0e6d2;
+    font-weight: bold;
+    border-bottom: 10px solid #f0e6d2;
+    border-radius: 30px;
+    text-align: center;
+}
+td.PrincipalDestiny,
+td.PrincipalDistance {
+    text-align: left;
+    font-size: 120px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+td.PrincipalDistance {
+    text-align: center;
+}
+td.PrincipalFatigue {
+    text-align: center;
+}
+td.PrincipalSpeedLimit {
+    vertical-align: top;
+}
+
+g.PrincipalFatigue {
+    fill: #00a000;
+}
+text.job-destinationCity {
+    fill: #f0e6d2;
+    text-anchor: start;
+}
+text.driveRestNumbers {
+    font-weight: bolder;
+    font-size: 80px;
+    fill: #000;
+}
+text.navigation-speedLimit {
+    font-size: 200px;
+    font-weight:bold;
+}
+circle.navigation-speedLimit {
+    fill: #fff;
+}
+text.navigation-speedLimit[data-value^="1"] {
+    font-size: 155px;
+}
+g.cityLimits {
+    visibility: hidden;
+    fill: rgba(0, 0, 0, 0.50);
+}
+div.PrincipalMessage {
+    color: #fffa00;
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.driverFatigueTime,
+.jobRemainingTime {
+    font-size: 180px;
+    fill: #f0e6d2;
+}
+td.PrincipalSpeed {
+    text-align: center;
+}
+text.navigation-minimalSpeed {
+    font-weight: bolder;
+    font-size: 245px;
+    fill: #f0e6d2;
+}
+text.velUnit {
+    font-style:italic;
+    font-weight: bold;
+    font-size: 75px;
+    fill: #3a7aff;
+}
+
+.cargoDamage {
+    color: #000000;
+    font-weight: bold;
+    font-size: 75px;
+    text-align: end;
+    text-anchor: end;
+}
+
+/*Navigation*/
+div.Navigation {
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+}
+table.Navigation {
+    width: 100%;
+    table-layout: fixed;
+}
+th.NavigationTitle {
+    text-align: center;
+}
+td.Navigation,
+td.NavigationData {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+td.NavigationData {
+    border-bottom: 10px solid #f0e6d2;
+    border-radius: 30px;
+}
+
+/*Damage*/
+div.Damage {
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+}
+table.Damage {
+    border-bottom: 10px solid #f0e6d2;
+    border-radius: 30px;
+    font-size: 90px;
+    width: 100%;
+}
+th.Damage {
+    width: 50%;
+    text-align: right;
+}
+tr.Damage {
+    border: 10px solid #f0e6d2;
+    border-radius: 30px;
+}
+td.Damage {
+    width: 50%;
+    text-align: left;
+    font-weight: bold;
+}
+th.DamageTitle {
+    color: #cf9316;
+    text-align: center;
+}
+
+/*Progress*/
+div.Progress {
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+table.Progress {
+    border-bottom: 10px solid #f0e6d2;
+    border-radius: 30px;
+    width: 100%;
+}
+th.ProgressSpeedActual,
+th.ProgressSpeedAverage,
+th.ProgressSpeedMinimal,
+th.ProgressSpeedNewMinimal {
+    color: #e3c895;
+    font-size: 180px;
+    line-height: 0.5;
+}
+th.ProgressTitle {
+    color: #cf9316;
+    width: 40%;
+}
+th.Progress {
+    font-weight: normal;
+    text-align: right;
+    width: 30%;
+}
+td.Progress {
+    font-weight: bold;
+    text-align: left;
+    width: 30%;
+}
+span.velUnit {
+    font-size: 75px;
+}
+
+/*RemainingTimeForm*/
+div.RemainingTimeForm {
+    font-size: 100px;
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+}
+table.RemainingTimeForm {
+    border-bottom: 10px solid #f0e6d2;
+    border-radius: 30px;
+    width: 100%;
+    table-layout: fixed;
+}
+th.RemainingTimeForm {
+    font-weight: bold;
+    text-align: right;
+    width: 50%;
+}
+td.RemainingTimeMessage {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+    width: 50%;
+}
+th.RemainingTimeButton {
+    font-size: 150px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #5e4d29;
+    border: 3px solid #d7d7d7;
+    border-radius: 20px;
+}
+select.RemainingTimeForm {
+    font-weight: bold;
+    font-size: 100px;
+    background-color: #000;
+    color: #f0e6d2;
+    width: 100%;
+    padding: 20px 20px;
+    border: 3px solid #d7d7d7;
+    border-radius: 20px;
+}
+option.RemainingTimeForm {
+    font-weight: bold;
+}
+
+teste {
+    background-color: #afff00
+}
