@@ -15,6 +15,7 @@ Funbit.Ets.Telemetry.Dashboard.prototype.internalFilter = function (data) {
 
 const lb = '<br/>';
 var tPaused = 'Paused';
+var tRetreived = 'Displaying data from the last game';
 var tEMWarning1 = "Unfortunately, the jobs for the World of Truck don't update the remaining time, so we can't calculate speeds and rest stops.";
 var tEMWarning2 = 'Please, pause the game, and enter above the Remaining Time shown in the top-left corner of the main screen.';
 var tEMWarning3 = 'Tap elsewhere to close this table.';
@@ -123,6 +124,7 @@ Funbit.Ets.Telemetry.Dashboard.prototype.initialize = function (skinConfig, util
         document.getElementById('tProgressRestingLeaving').innerHTML = 'Sobrará:';
 
         tPaused = 'Pausa';
+        tRetreived = 'Exibindo dados do último jogo';
         tEMWarning1 = 'Os trabalhos para o World of Truck infelizmente não indicam o tempo restante e, sem isso, não há como calcular as velocidades e as paradas.';
         tEMWarning2 = 'Pause o jogo e digite nos campos acima o Tempo Restante indicado no canto superior esquerdo da tela principal.';
         tEMWarning3 = 'Toque em qualquer outro lugar para fechar esta tela.';
@@ -413,11 +415,12 @@ Funbit.Ets.Telemetry.Dashboard.prototype.filter = function (data, utils) {
     
     if (data.game.connected === false) {
         jobWoT = false;
-        message += tOffLine1 + lb + '<font style="font-size: 50%;">' + tOffLine2 + lb + '</font>';
+        message += tOffLine1 + lb + '<font style="font-size: 50%;">' + tOffLine2 + '</font>' + lb;
         //Retrieving data
         if (localStorage.getItem("TelemetryData") !== null) data = JSON.parse(localStorage.getItem("TelemetryData"));
         data.retrieved = true;
         if (data.game.gameName === undefined) data.game.gameName = '';
+        message += lb + '<font style="font-size: 75%; color: #e1b04c;">' + tRetreived + '</font>' + lb + lb;
     } else {
         //Saving data
         data.retrieved = false;
@@ -930,7 +933,7 @@ Funbit.Ets.Telemetry.Dashboard.prototype.filter = function (data, utils) {
         data.realEstimatedTime = data.realEstimatedTime % (24 * 60);
         data.realEstimatedTime = minsToReadableTime(data.realEstimatedTime, utils);
     }
-    data.realEstimatedTime = data.retrieved ? "<font style='font-size: 85px;color: #3d85eb;'>" + data.game.gameName + "</font>" : data.game.paused && !jobWoT ? "<font style='font-size: 75px;'>" + tPaused + "</font>" : data.realEstimatedTime;
+    data.realEstimatedTime = data.retrieved ? "<font style='font-size: 85px;color: #cf9316;'>" + data.game.gameName + "</font>" : data.game.paused && !jobWoT ? "<font style='font-size: 75px;'>" + tPaused + "</font>" : data.realEstimatedTime;
 
     t = new Date();
     data.realNow = utils.formatInteger(t.getHours(), 2) + ':' + utils.formatInteger(t.getMinutes(), 2);
