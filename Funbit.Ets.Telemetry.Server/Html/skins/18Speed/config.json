@@ -15,7 +15,7 @@
 
     "config": {
         "name": "18speed",
-        "title": "Gear Shift helper for Server 4.1.2",
+        "title": "Gear Shift helper",
         "author": "Trinity",        
         "width": 2381,
         "height": 1352
