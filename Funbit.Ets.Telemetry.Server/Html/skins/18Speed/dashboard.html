@@ -103,24 +103,18 @@
         <div class="statusMessage"></div>
         <div class="shiftUp"></div>
         <div class="shiftDown"></div>
+		<div class="game-gameName" id="name-game"style="visibility: hidden"></div>
+		<div class="truck-make" id="make"style="visibility: hidden"></div>
+		<div class="truck-model" id="model"style="visibility: hidden"></div>
         <div class="cargo-mass" id="trip-mass" style="visibility: hidden"></div>
         <div class="_tripA" style="visibility: hidden"></div>
         <div class="_tripB" style="visibility: hidden"></div>
         <div class="_tripStartA" onclick="resetTripA()" style="visibility: hidden"></div>
         <div class="_tripStartB" ondblclick="resetTripB()" style="visibility: hidden"></div>
     </div>
-    <div audio>
-        <div class="sound-check1" onmousedown="clip1.play()"></div>
-        <div class="sound-check2" onmousedown="clip2.play()"></div>
-        <div class="sound-check3" onmousedown="clip3.play()"></div>
-        <audio id="clip" src="../skins/18speed/audio/testing.mp3" preload="auto"></audio>
-        <audio id="clip1" src="../skins/18speed/audio/next.mp3" preload="auto"></audio>
-        <audio id="clip2" src="../skins/18speed/audio/forwdone.mp3" preload="auto"></audio>
-        <audio id="clip3" src="../skins/18speed/audio/revrdone.mp3" preload="auto"></audio>
-        <div class="truck-id" id="strId" style="font-size: 0px"></div>
-    </div>
     <div class="speeDo">
         <div class="limitSignDisp" onclick="changeDis()"></div>
+		<div class="GearDisplay" onclick="displayGear()"></div>
     </div>
 
     <div overlay>
@@ -142,16 +136,16 @@
             <!-- Full-width images with number text -->
             <div class="mySlides">
                 <div class="numbertext">1 / 3</div>
-                <img src="../skins/18speed/GM_about1.png" style="width:100%">
+                <img src="../skins/18Speed/images/GM_about1.png" style="width:100%">
             </div>
 
             <div class="mySlides">
                 <div class="numbertext">2 / 3</div>
-                <img src="../skins/18speed/GM_about2.png" style="width:100%">
+                <img src="../skins/18Speed/images/GM_about2.png" style="width:100%">
             </div>
             <div class="mySlides">
                 <div class="numbertext">3 / 3</div>
-                <img src="../skins/18speed/GM_about3.png" style="width:100%">
+                <img src="../skins/18Speed/images/GM_about3.png" style="width:100%">
             </div>
 
             <!-- Next and previous buttons -->

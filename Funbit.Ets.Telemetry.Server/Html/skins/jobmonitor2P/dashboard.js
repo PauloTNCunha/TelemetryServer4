@@ -412,7 +412,12 @@ CheckLiftables = function (data) {
 Funbit.Ets.Telemetry.Dashboard.prototype.filter = function (data, utils) {
     var t;
     var remTime;
-    
+
+    //message += 'Slot: ' + data.shifter.slot + '/' + data.shifter.slotCount + lb;
+    //message += 'Selector: ' + data.shifter.selector + '/' + data.shifter.selectorCount + lb;
+    //message += 'Gear: ' + data.shifter.slots[data.shifter.slot].seletors[data.shifter.selector].gearName + lb; 
+    //message += 'Retarder: ' + data.truck.retarderBrake + '/' + data.truck.retarderStepCount + lb;
+
     if (data.game.connected === false) {
         jobWoT = false;
         message += tOffLine1 + lb + '<font style="font-size: 50%;">' + tOffLine2 + '</font>' + lb;

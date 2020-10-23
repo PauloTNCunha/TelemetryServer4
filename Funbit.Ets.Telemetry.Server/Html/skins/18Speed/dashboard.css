@@ -78,6 +78,17 @@ body {
     }
 }
 
+.GearDisplay {
+    cursor: pointer;
+    display: block;
+	position: absolute;
+	left: 30px;
+	top: 333px;
+	width: 934px;
+	height: 993px;
+	z-Index: 3;
+}
+
 .limitSignDisp {
     cursor: pointer;
     display: block;
@@ -387,10 +398,6 @@ body {
 .truck-waterTemperatureWarningOn {
     visibility: hidden;
 }
-/* .truck-electricOn.yes .truck-forwardGears, */
-/* .truck-electricOn.yes .truck-reverseGears { */
-/* opacity: 0.25; */
-/* } */
 .truck-electricOn.yes .truck-displayedGear {
     opacity: 1;
 }
@@ -653,8 +660,8 @@ body {
     visibility: hidden;
 }
 
-.shiftDown {
-    background-image: url("images/shiftDown.png");
+.shiftUp {
+    background-image: url("images/shiftUp.png");
     left: 44px;
     top: 112px;
     width: 84px;
@@ -670,8 +677,8 @@ body {
     }
 }
 
-.shiftUp {
-    background-image: url("images/shiftUp.png");
+.shiftDown {
+    background-image: url("images/shiftDown.png");
     left: 2262px;
     top: 110px;
     width: 84px;

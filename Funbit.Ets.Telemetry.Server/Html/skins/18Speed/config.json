@@ -14,7 +14,7 @@
     ],
 
     "config": {
-        "name": "18speed",
+        "name": "18Speed(TlmtryV.4.1.2)",
         "title": "Gear Shift helper",
         "author": "Trinity",        
         "width": 2381,

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using System.Text;
 using Funbit.Ets.Telemetry.Server.Data.Reader;
@@ -337,11 +338,12 @@ namespace Funbit.Ets.Telemetry.Server.Data
                             ? new string[] { "N", "1", "2", "3", "4", "5L", "5H", "6L", "6H", "7L", "7H", "8L", "8H" }
                             : new string[] { "N", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" };
                         break;
-                    case 10:
-                        fwGears = new string[] { "N", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" };
-                        break;
-                    case 9:
-                        fwGears = new string[] { "N", "L", "1", "2", "3", "4", "5", "6", "7", "8" };
+                    case <11:
+                        fwGears[0] = "N";
+                        for(int i = 1; i < fwGears.Length; i++)
+                        {
+                            fwGears[i] = i.ToString();
+                        }
                         break;
                 }
                 return fwGears;
@@ -367,7 +369,9 @@ namespace Funbit.Ets.Telemetry.Server.Data
                             : new string[] { "N", "R1", "R2", "R3" };
                         break;
                     case 2:
-                        rvGears = new string[] { "N", "RL", "RH" };
+                        rvGears = (Type == "hshifter")
+                            ? rvGears = new string[] { "N", "RL", "RH" }
+                            : rvGears = new string[] { "N", "R1", "R2" };
                         break;
                     case 1:
                         rvGears = new string[] { "N", "R" };
@@ -463,16 +467,25 @@ namespace Funbit.Ets.Telemetry.Server.Data
         //public uint[] HshifterBitmask => _rawData.Struct.hshifterBitmask;
         //public int[] HshifterResulting => _rawData.Struct.hshifterResulting;
 
-        public int SelectorCount => _rawData.Struct.selectorCount == 0 ? 0 : (int)Math.Pow(2, _rawData.Struct.selectorCount);
-        public int SlotCount => _rawData.Struct.hshifterPosition == null ? 0 : (int)_rawData.Struct.hshifterPosition[_rawData.Struct.hshifterPosition.Length - 1] + 1;
+        public int SelectorCount => Type != "hshifter" ? 1 : (int)Math.Pow(2, _rawData.Struct.selectorCount);
+        public int SlotCount => _rawData.Struct.hshifterPosition == null ? 0 : Type != "hshifter" ? 1 : (int)_rawData.Struct.hshifterPosition.Max() + 1;
         public IEts2ShifterSlot[] Slots
         {
             get
             {
                 if (SlotCount == 0) return null;
-                var slots = new IEts2ShifterSlot[SlotCount];
-                for (int slot = 0; slot < slots.Length; slot++)
-                    slots[slot] = new Ets2ShifterSlot(_rawData, SelectorCount, slot, ForwardGearNames, ReverseGearNames);
+                IEts2ShifterSlot[] slots;
+                if (Type == "hshifter")
+                {
+                    slots = new IEts2ShifterSlot[SlotCount];
+                    for (int slot = 0; slot < slots.Length; slot++)
+                        slots[slot] = new Ets2ShifterSlot(_rawData, SelectorCount, slot, ForwardGearNames, ReverseGearNames);
+                } else
+                {
+                    slots = new IEts2ShifterSlot[1];
+                    // todo: display teh correct gear when not Hshifter;
+                    slots[0] = new Ets2ShifterSlot(_rawData, SelectorCount, 0, ForwardGearNames, ReverseGearNames);
+                }
                 return slots;
             }
         }
@@ -485,15 +498,19 @@ namespace Funbit.Ets.Telemetry.Server.Data
         public float GearRatio => (Gear == 0) ? 0 : (Gear < 0)
                 ? (float)_rawData.Struct.gearRatiosReverse[Math.Abs(Gear) - 1]
                 : (float)_rawData.Struct.gearRatiosForward[Gear - 1];
-        public int Slot => (int)_rawData.Struct.shifterSlot;
+        public int Slot => Type != "hshifter" ? 0 : (int)_rawData.Struct.shifterSlot;
         public int Selector
         {
             get
             {
                 int selectors = 0;
-                if (_rawData.Struct.shifterToggle != null)
-                    for (int i = 0; i < _rawData.Struct.shifterToggle.Length; i++)
-                        selectors += (int)Math.Pow(2, (double)i) * ((int)Math.Pow(2, (double)_rawData.Struct.shifterToggle[i]) - 1);
+                if (Type == "hshifter") {
+                    if (_rawData.Struct.shifterToggle != null)
+                        for (int i = 0; i < _rawData.Struct.shifterToggle.Length; i++)
+                            selectors += (int)Math.Pow(2, (double)i) * ((int)Math.Pow(2, (double)_rawData.Struct.shifterToggle[i]) - 1);
+                    if (SelectorCount > 0 || selectors >= SelectorCount)
+                        selectors = SelectorCount - 1;
+                }
                 return selectors;
             }
         }
