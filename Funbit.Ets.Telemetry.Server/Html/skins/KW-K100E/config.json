@@ -14,11 +14,11 @@
     ],
 
     "config": {
-        "name": "18Speed",
-        "title": "Gear Shift helper",
-        "author": "Trinity",        
-        "width": 2381,
-        "height": 1352
+        "name": "KW-K100E",
+        "title": "Kenworth K100E",
+        "author": "Trinity4u",
+        "width": 1366,
+        "height": 768
     }    
 
 }
