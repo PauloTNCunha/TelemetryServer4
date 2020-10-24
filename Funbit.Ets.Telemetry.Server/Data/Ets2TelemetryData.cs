@@ -473,7 +473,7 @@ namespace Funbit.Ets.Telemetry.Server.Data
         {
             get
             {
-                if (SlotCount == 0) return null;
+                if (SlotCount == 0 || ReverseGearNames == null) return null;
                 IEts2ShifterSlot[] slots;
                 if (Type == "hshifter")
                 {
@@ -483,8 +483,9 @@ namespace Funbit.Ets.Telemetry.Server.Data
                 } else
                 {
                     slots = new IEts2ShifterSlot[1];
-                    // todo: display teh correct gear when not Hshifter;
                     slots[0] = new Ets2ShifterSlot(_rawData, SelectorCount, 0, ForwardGearNames, ReverseGearNames);
+                    slots[0].Seletors[0].Gear = Gear;
+                    slots[0].Seletors[0].GearName = (Gear < 0) ? ReverseGearNames[Math.Abs(Gear)] : ForwardGearNames[Gear];
                 }
                 return slots;
             }
@@ -515,7 +516,7 @@ namespace Funbit.Ets.Telemetry.Server.Data
             }
         }
 
-        public int BestGear
+        public int BestGear   // Needs a lot of work.
         { 
             get 
             {
@@ -574,8 +575,8 @@ namespace Funbit.Ets.Telemetry.Server.Data
             GearName = (Gear < 0) ? rvGearNames[Math.Abs(Gear)] : fwGearNames[Gear];
         }
         public int Selector { get; private set; }
-        public int Gear { get; private set; }
-        public string GearName { get; private set; }
+        public int Gear { get; set; }
+        public string GearName { get; set; }
     }
 
 

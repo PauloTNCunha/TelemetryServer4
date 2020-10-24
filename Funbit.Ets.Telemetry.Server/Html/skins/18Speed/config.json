@@ -15,7 +15,7 @@
 
     "config": {
         "name": "18Speed",
-        "title": "Gear Shift helper",
+        "title": "Gear Shift helper for Telemetry V4.1.2",
         "author": "Trinity",        
         "width": 2381,
         "height": 1352

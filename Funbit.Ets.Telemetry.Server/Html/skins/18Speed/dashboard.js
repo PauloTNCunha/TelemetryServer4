@@ -47,8 +47,8 @@ Funbit.Ets.Telemetry.Dashboard.prototype.filter = function (data, utils) {
     var cut = str.slice(0, 3);
     var diff = data.shifter.differentialRatio;
     var fWg = data.truck.forwardGears;
-	  var rVg = data.truck.reverseGears;
-	  var	D_Ratio = data.shifter.differentialRatio;
+	var rVg = data.truck.reverseGears;
+	var	D_Ratio = data.shifter.differentialRatio;
     var spd = data.truck.speed;
     var fGr = data.truck.forwardGears;
     var rGr = data.truck.reverseGears;
@@ -443,24 +443,24 @@ Funbit.Ets.Telemetry.Dashboard.prototype.render = function (data, utils) {
     var loadMass = document.getElementById("trip-mass").innerHTML;
     var workStat = localStorage.getItem("workStat");
 
-    if (data.cargo.cargoLoaded === false && jobS === "saved") {
+    if (data.cargo.cargoLoaded == false && jobS == "saved") {
         jobS = "empty";
         work_stat();
     }
 
-    if (data.cargo.cargoLoaded === true && data.trailer.attached === false && jobS === "empty") {
+    if (data.cargo.cargoLoaded == true && data.trailer.attached == false && jobS === "empty") {
         jobS = "gotJob";
         resetMass();
         work_stat();
         var jobM = loadMass;
     }
 
-    if (data.cargo.cargoLoaded === true && data.trailer.attached === true && jobS === "gotJob") {
+    if (data.cargo.cargoLoaded == true && data.trailer.attached == true && jobS == "gotJob") {
         jobS = "loaded";
         work_stat();
     }
 
-    if (data.job.jobMarket !== "" && data.cargo.cargoLoaded === true && data.trailer.attached === true && jobS === "loaded") {
+    if (data.job.jobMarket !== "" && data.cargo.cargoLoaded === true && data.trailer.attached === true && jobS == "loaded") {
         resetTripB();
         jobS = "saved";
     }
@@ -471,10 +471,9 @@ Funbit.Ets.Telemetry.Dashboard.prototype.render = function (data, utils) {
 
     if (localStorage.showId === "Kph") {
         if (data.truck.electricOn === true) {
+            $('.dashboard').css('opacity', '1');
             $('.truck-placement-roll').css('visibility', 'visible');
             $('.truck-placement-cover').css('visibility', 'visible');
-            $('.dashboard').css('opacity', '1');
-            $('.gearSync').css('visibility', 'visible');
             $('.limitSignDisp').css('visibility', 'visible');
             $('.RPMslide').css('visibility', 'visible');
             $('.RevSlide').css('visibility', 'visible');
@@ -501,10 +500,9 @@ Funbit.Ets.Telemetry.Dashboard.prototype.render = function (data, utils) {
             $('.navigation-speedLimitMph').css('visibility', 'hidden');
             $('.truck-cruiseControlSpeedRoundedMph').css('visibility', 'hidden');
         } else {
+            $('.dashboard').css('opacity', '0.5');
             $('.truck-placement-roll').css('visibility', 'hidden');
             $('.truck-placement-cover').css('visibility', 'hidden');
-            $('.dashboard').css('opacity', '0.5');
-            $('.gearSync').css('visibility', 'hidden');
             $('.limitSignDisp').css('visibility', 'hidden');
             $('.RPMslide').css('visibility', 'hidden');
             $('.RevSlide').css('visibility', 'hidden');
@@ -519,7 +517,6 @@ Funbit.Ets.Telemetry.Dashboard.prototype.render = function (data, utils) {
             $('.truck-placement-roll').css('visibility', 'visible');
             $('.truck-placement-cover').css('visibility', 'visible');
             $('.dashboard').css('opacity', '1');
-            $('.gearSync').css('visibility', 'visible');
             $('.limitSignDisp').css('visibility', 'visible');
             $('.RPMslide').css('visibility', 'visible');
             $('.RevSlide').css('visibility', 'visible');
@@ -549,7 +546,6 @@ Funbit.Ets.Telemetry.Dashboard.prototype.render = function (data, utils) {
             $('.truck-placement-roll').css('visibility', 'hidden');
             $('.truck-placement-cover').css('visibility', 'hidden');
             $('.dashboard').css('opacity', '0.5');
-            $('.gearSync').css('visibility', 'hidden');
             $('.limitSignDisp').css('visibility', 'hidden');
             $('.RPMslide').css('visibility', 'hidden');
             $('.RevSlide').css('visibility', 'hidden');
@@ -845,8 +841,10 @@ Funbit.Ets.Telemetry.Dashboard.prototype.render = function (data, utils) {
     } else if (data.truck.gear === 0) {
         if (data.truck.shifterType === "hshifter" || data.truck.shifterType === "manual" || (localStorage.DisplayGear === "Yes" && data.truck.shifterType === "automatic")) {
             $('.truck-displayedGear').css({ left: 457 + "px", top: 764 + "px", width: 89 + "px", height: 137 + "px", position: "absolute", zIndex: 3, backgroundImage: 'url("../skins/18Speed/images/N.png")' });
+            $('.truck-nextGear').css({ left: 457 + "px", top: 764 + "px", width: 89 + "px", height: 137 + "px", position: "absolute", zIndex: 3, backgroundImage: 'url("../skins/18Speed/images/N.png")' });
         } else if (data.truck.shifterType === "automatic" || data.truck.shifterType === "arcade" && localStorage.DisplayGear === "No") {
             $('.truck-displayedGear').css({ left: 193 + "px", top: 709 + "px", width: 210 + "px", height: 210 + "px", position: "absolute", zIndex: 4, backgroundImage: 'url("../skins/18Speed/images/gearhighlight.png")' });
+            $('.truck-nextGear').css({ left: 457 + "px", top: 764 + "px", width: 89 + "px", height: 137 + "px", position: "absolute", zIndex: 3, backgroundImage: 'url("../skins/18Speed/images/N.png")' });
         }
     } else if (data.truck.gear > 0) {
         if (data.truck.shifterType === "hshifter" || data.truck.shifterType === "manual" || (localStorage.DisplayGear === "Yes" && data.truck.shifterType === "automatic")) {
@@ -881,7 +879,7 @@ Funbit.Ets.Telemetry.Dashboard.prototype.render = function (data, utils) {
                     }
                 }
             }
-            if (data.truck.nextGear === 1) {
+            if (data.shifter.bestGear === 1) {
                 if (data.truck.id === "freightliner" || data.truck.id === "international" || data.truck.id === "kenworth" || data.truck.id === "mack" || data.truck.id === "peterbilt" || data.truck.id === "volvo" || data.truck.id === "westernstar") {
                     if (data.truck.forwardGears === 18) {
                         $('.truck-nextGear').css({ left: 45 + "px", top: 1053 + "px", width: 245 + "px", height: 170 + "px", position: "absolute", zIndex: 3, backgroundImage: 'url("../skins/18Speed/images/clb.png")' });
@@ -945,7 +943,7 @@ Funbit.Ets.Telemetry.Dashboard.prototype.render = function (data, utils) {
                     }
                 }
             }
-            if (data.truck.nextGear === 2) {
+            if (data.shifter.bestGear === 2) {
                 if (data.truck.id === "freightliner" || data.truck.id === "international" || data.truck.id === "kenworth" || data.truck.id === "mack" || data.truck.id === "peterbilt" || data.truck.id === "volvo" || data.truck.id === "westernstar") {
                     if (data.truck.forwardGears === 18) {
                         $('.truck-nextGear').css({ left: 45 + "px", top: 1053 + "px", width: 245 + "px", height: 170 + "px", position: "absolute", zIndex: 3, backgroundImage: 'url("../skins/18Speed/images/chb.png")' });
@@ -1013,7 +1011,7 @@ Funbit.Ets.Telemetry.Dashboard.prototype.render = function (data, utils) {
                     }
                 }
             }
-            if (data.truck.nextGear === 3) {
+            if (data.shifter.bestGear === 3) {
                 if (data.truck.id === "freightliner" || data.truck.id === "international" || data.truck.id === "kenworth" || data.truck.id === "mack" || data.truck.id === "peterbilt" || data.truck.id === "volvo" || data.truck.id === "westernstar") {
                     if (data.truck.forwardGears === 18) {
                         $('.truck-nextGear').css({ left: 386 + "px", top: 529 + "px", width: 194 + "px", height: 164 + "px", position: "absolute", zIndex: 3, backgroundImage: 'url("../skins/18Speed/images/1lw.png")' });
@@ -1086,7 +1084,7 @@ Funbit.Ets.Telemetry.Dashboard.prototype.render = function (data, utils) {
                     }
                 }
             }
-            if (data.truck.nextGear === 4) {
+            if (data.shifter.bestGear === 4) {
                 if (data.truck.id === "freightliner" || data.truck.id === "international" || data.truck.id === "kenworth" || data.truck.id === "mack" || data.truck.id === "peterbilt" || data.truck.id === "volvo" || data.truck.id === "westernstar") {
                     if (data.truck.forwardGears === 18) {
                         $('.truck-nextGear').css({ left: 386 + "px", top: 529 + "px", width: 194 + "px", height: 164 + "px", position: "absolute", zIndex: 3, backgroundImage: 'url("../skins/18Speed/images/1hw.png")' });
@@ -1159,7 +1157,7 @@ Funbit.Ets.Telemetry.Dashboard.prototype.render = function (data, utils) {
                     }
                 }
             }
-            if (data.truck.nextGear === 5) {
+            if (data.shifter.bestGear === 5) {
                 if (data.truck.id === "freightliner" || data.truck.id === "international" || data.truck.id === "kenworth" || data.truck.id === "mack" || data.truck.id === "peterbilt" || data.truck.id === "volvo" || data.truck.id === "westernstar") {
                     if (data.truck.forwardGears === 18) {
                         $('.truck-nextGear').css({ left: 388 + "px", top: 1143 + "px", width: 202 + "px", height: 169 + "px", position: "absolute", zIndex: 3, backgroundImage: 'url("../skins/18Speed/images/2lw.png")' });
@@ -1232,7 +1230,7 @@ Funbit.Ets.Telemetry.Dashboard.prototype.render = function (data, utils) {
                     }
                 }
             }
-            if (data.truck.nextGear === 6) {
+            if (data.shifter.bestGear === 6) {
                 if (data.truck.id === "freightliner" || data.truck.id === "international" || data.truck.id === "kenworth" || data.truck.id === "mack" || data.truck.id === "peterbilt" || data.truck.id === "volvo" || data.truck.id === "westernstar") {
                     if (data.truck.forwardGears === 18) {
                         $('.truck-nextGear').css({ left: 388 + "px", top: 1143 + "px", width: 202 + "px", height: 169 + "px", position: "absolute", zIndex: 3, backgroundImage: 'url("../skins/18Speed/images/2hw.png")' });
@@ -1305,7 +1303,7 @@ Funbit.Ets.Telemetry.Dashboard.prototype.render = function (data, utils) {
                     }
                 }
             }
-            if (data.truck.nextGear === 7) {
+            if (data.shifter.bestGear === 7) {
                 if (data.truck.id === "freightliner" || data.truck.id === "international" || data.truck.id === "kenworth" || data.truck.id === "mack" || data.truck.id === "peterbilt" || data.truck.id === "volvo" || data.truck.id === "westernstar") {
                     if (data.truck.forwardGears === 18) {
                         $('.truck-nextGear').css({ left: 711 + "px", top: 529 + "px", width: 212 + "px", height: 169 + "px", position: "absolute", zIndex: 3, backgroundImage: 'url("../skins/18Speed/images/3lw.png")' });
@@ -1378,7 +1376,7 @@ Funbit.Ets.Telemetry.Dashboard.prototype.render = function (data, utils) {
                     }
                 }
             }
-            if (data.truck.nextGear === 8) {
+            if (data.shifter.bestGear === 8) {
                 if (data.truck.id === "freightliner" || data.truck.id === "international" || data.truck.id === "kenworth" || data.truck.id === "mack" || data.truck.id === "peterbilt" || data.truck.id === "volvo" || data.truck.id === "westernstar") {
                     if (data.truck.forwardGears === 18) {
                         $('.truck-nextGear').css({ left: 711 + "px", top: 529 + "px", width: 212 + "px", height: 169 + "px", position: "absolute", zIndex: 3, backgroundImage: 'url("../skins/18Speed/images/3hw.png")' });
@@ -1451,7 +1449,7 @@ Funbit.Ets.Telemetry.Dashboard.prototype.render = function (data, utils) {
                     }
                 }
             }
-            if (data.truck.nextGear === 9) {
+            if (data.shifter.bestGear === 9) {
                 if (data.truck.id === "freightliner" || data.truck.id === "international" || data.truck.id === "kenworth" || data.truck.id === "mack" || data.truck.id === "peterbilt" || data.truck.id === "volvo" || data.truck.id === "westernstar") {
                     if (data.truck.forwardGears === 18) {
                         $('.truck-nextGear').css({ left: 711 + "px", top: 1144 + "px", width: 212 + "px", height: 168 + "px", position: "absolute", zIndex: 3, backgroundImage: 'url("../skins/18Speed/images/4lw.png")' });
@@ -1524,7 +1522,7 @@ Funbit.Ets.Telemetry.Dashboard.prototype.render = function (data, utils) {
                     }
                 }
             }
-            if (data.truck.nextGear === 10) {
+            if (data.shifter.bestGear === 10) {
                 if (data.truck.id === "freightliner" || data.truck.id === "international" || data.truck.id === "kenworth" || data.truck.id === "mack" || data.truck.id === "peterbilt" || data.truck.id === "volvo" || data.truck.id === "westernstar") {
                     if (data.truck.forwardGears === 18) {
                         $('.truck-nextGear').css({ left: 711 + "px", top: 1144 + "px", width: 212 + "px", height: 168 + "px", position: "absolute", zIndex: 3, backgroundImage: 'url("../skins/18Speed/images/4hw.png")' });
@@ -1595,7 +1593,7 @@ Funbit.Ets.Telemetry.Dashboard.prototype.render = function (data, utils) {
                     }
                 }
             }
-            if (data.truck.nextGear === 11) {
+            if (data.shifter.bestGear === 11) {
                 if (data.truck.id === "freightliner" || data.truck.id === "international" || data.truck.id === "kenworth" || data.truck.id === "mack" || data.truck.id === "peterbilt" || data.truck.id === "volvo" || data.truck.id === "westernstar") {
                     if (data.truck.forwardGears === 18) {
                         $('.truck-nextGear').css({ left: 377 + "px", top: 346 + "px", width: 213 + "px", height: 168 + "px", position: "absolute", zIndex: 3, backgroundImage: 'url("../skins/18Speed/images/5lb.png")' });
@@ -1663,7 +1661,7 @@ Funbit.Ets.Telemetry.Dashboard.prototype.render = function (data, utils) {
                     }
                 }
             }
-            if (data.truck.nextGear === 12) {
+            if (data.shifter.bestGear === 12) {
                 if (data.truck.id === "freightliner" || data.truck.id === "international" || data.truck.id === "kenworth" || data.truck.id === "mack" || data.truck.id === "peterbilt" || data.truck.id === "volvo" || data.truck.id === "westernstar") {
                     if (data.truck.forwardGears === 18) {
                         $('.truck-nextGear').css({ left: 377 + "px", top: 346 + "px", width: 213 + "px", height: 168 + "px", position: "absolute", zIndex: 3, backgroundImage: 'url("../skins/18Speed/images/5hb.png")' });
@@ -1721,7 +1719,7 @@ Funbit.Ets.Telemetry.Dashboard.prototype.render = function (data, utils) {
                     $('.truck-displayedGear').css({ left: 711 + "px", top: 350 + "px", width: 214 + "px", height: 161 + "px", position: "absolute", zIndex: 3, backgroundImage: 'url("../skins/18Speed/images/6lb.png")' });
                 }
             }
-            if (data.truck.nextGear === 13) {
+            if (data.shifter.bestGear === 13) {
                 if (data.truck.id === "freightliner" || data.truck.id === "international" || data.truck.id === "kenworth" || data.truck.id === "mack" || data.truck.id === "peterbilt" || data.truck.id === "volvo" || data.truck.id === "westernstar") {
                     if (data.truck.forwardGears === 18) {
                         $('.truck-nextGear').css({ left: 374 + "px", top: 958 + "px", width: 216 + "px", height: 169 + "px", position: "absolute", zIndex: 3, backgroundImage: 'url("../skins/18Speed/images/6lb.png")' });
@@ -1764,7 +1762,7 @@ Funbit.Ets.Telemetry.Dashboard.prototype.render = function (data, utils) {
                     $('.truck-displayedGear').css({ left: 711 + "px", top: 350 + "px", width: 214 + "px", height: 161 + "px", position: "absolute", zIndex: 3, backgroundImage: 'url("../skins/18Speed/images/6hb.png")' });
                 }
             }
-            if (data.truck.nextGear === 14) {
+            if (data.shifter.bestGear === 14) {
                 if (data.truck.id === "freightliner" || data.truck.id === "international" || data.truck.id === "kenworth" || data.truck.id === "mack" || data.truck.id === "peterbilt" || data.truck.id === "volvo" || data.truck.id === "westernstar") {
                     if (data.truck.forwardGears === 18) {
                         $('.truck-nextGear').css({ left: 374 + "px", top: 958 + "px", width: 216 + "px", height: 169 + "px", position: "absolute", zIndex: 3, backgroundImage: 'url("../skins/18Speed/images/6hb.png")' });
@@ -1798,7 +1796,7 @@ Funbit.Ets.Telemetry.Dashboard.prototype.render = function (data, utils) {
                     }
                 }
             }
-            if (data.truck.nextGear === 15) {
+            if (data.shifter.bestGear === 15) {
                 if (data.truck.id === "freightliner" || data.truck.id === "international" || data.truck.id === "kenworth" || data.truck.id === "mack" || data.truck.id === "peterbilt" || data.truck.id === "volvo" || data.truck.id === "westernstar") {
                     if (data.truck.forwardGears === 18) {
                         $('.truck-nextGear').css({ left: 708 + "px", top: 345 + "px", width: 216 + "px", height: 169 + "px", position: "absolute", zIndex: 3, backgroundImage: 'url("../skins/18Speed/images/7lb.png")' });
@@ -1824,7 +1822,7 @@ Funbit.Ets.Telemetry.Dashboard.prototype.render = function (data, utils) {
                     }
                 }
             }
-            if (data.truck.nextGear === 16) {
+            if (data.shifter.bestGear === 16) {
                 if (data.truck.id === "freightliner" || data.truck.id === "international" || data.truck.id === "kenworth" || data.truck.id === "mack" || data.truck.id === "peterbilt" || data.truck.id === "volvo" || data.truck.id === "westernstar") {
                     if (data.truck.forwardGears === 18) {
                         $('.truck-nextGear').css({ left: 708 + "px", top: 345 + "px", width: 216 + "px", height: 169 + "px", position: "absolute", zIndex: 3, backgroundImage: 'url("../skins/18Speed/images/7hb.png")' });
@@ -1841,14 +1839,14 @@ Funbit.Ets.Telemetry.Dashboard.prototype.render = function (data, utils) {
             if (data.truck.gear === 17) {
                 $('.truck-displayedGear').css({ left: 704 + "px", top: 958 + "px", width: 220 + "px", height: 169 + "px", position: "absolute", zIndex: 3, backgroundImage: 'url("../skins/18Speed/images/8lb.png")' });
             }
-            if (data.truck.nextGear === 17) {
+            if (data.shifter.bestGear === 17) {
                 $('.truck-nextGear').css({ left: 704 + "px", top: 958 + "px", width: 220 + "px", height: 169 + "px", position: "absolute", zIndex: 3, backgroundImage: 'url("../skins/18Speed/images/8lb.png")' });
                 $('.truck-nextGear').css('animation', 'blinker 0.8s linear infinite');
             }
             if (data.truck.gear === 18 && data.truck.forwardGears === 18) {
                 $('.truck-displayedGear').css({ left: 704 + "px", top: 958 + "px", width: 220 + "px", height: 169 + "px", position: "absolute", zIndex: 3, backgroundImage: 'url("../skins/18Speed/images/8hb.png")' });
             }
-            if (data.truck.nextGear === 18) {
+            if (data.shifter.bestGear === 18) {
                 $('.truck-nextGear').css({ left: 704 + "px", top: 958 + "px", width: 220 + "px", height: 169 + "px", position: "absolute", zIndex: 3, backgroundImage: 'url("../skins/18Speed/images/8hb.png")' });
                 $('.truck-nextGear').css('animation', 'blinker 0.8s linear infinite');
             }

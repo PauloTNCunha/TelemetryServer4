@@ -1175,6 +1175,7 @@ namespace Funbit.Ets.Telemetry.Server.Data
         /// <summary>
         /// The best gear to be selected.
         /// Example: 14
+        /// Too simple. Needs a lot of work to be precise.
         /// </summary>
         int BestGear { get; }
         /// <summary>
@@ -1212,12 +1213,12 @@ namespace Funbit.Ets.Telemetry.Server.Data
         /// Gear selected when requirements for this h-shifter slot are meet.
         /// Example: 18
         /// </summary>
-        int Gear { get; }
+        int Gear { get; set; }
         /// <summary>
         /// Gear's name when requirements for this h-shifter slot are meet.
         /// Example: 8H
         /// </summary>
-        string GearName { get; }
+        string GearName { get; set; }
     }
 
 }

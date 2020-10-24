@@ -412,7 +412,7 @@ CheckLiftables = function (data) {
 Funbit.Ets.Telemetry.Dashboard.prototype.filter = function (data, utils) {
     var t;
     var remTime;
-    
+
     if (data.game.connected === false) {
         jobWoT = false;
         message += tOffLine1 + lb + '<font style="font-size: 50%;">' + tOffLine2 + '</font>' + lb;
@@ -463,6 +463,15 @@ Funbit.Ets.Telemetry.Dashboard.prototype.filter = function (data, utils) {
         }
     }
     data.navigation.cityLimits = data.game.timeScale !== roadTimeScale ? 2 : 0;
+
+    //message += 'Slot: ' + data.shifter.slot + '/' + data.shifter.slotCount + lb;
+    //message += 'Selector: ' + data.shifter.selector + '/' + data.shifter.selectorCount + lb;
+    //message += 'Gear: ' + data.shifter.slots[data.shifter.slot].seletors[data.shifter.selector].gearName + lb;
+    //message += 'Best Gear: ' + data.shifter.bestGearName + lb;
+    if (data.shifter.gear !== data.shifter.bestGear)
+        message += 'Best Gear: ' + data.shifter.bestGearName + lb;
+    if (data.truck.retarderBrake > 0)
+        message += 'Retarder: ' + data.truck.retarderBrake + '/' + data.truck.retarderStepCount + lb;
 
     if (data.game.connected === true) {
         SetTruck(data);

@@ -432,9 +432,9 @@ body {
     z-index: -1;
 }
 
-    .truck-wipersOn.yes {
-        background-color: white;
-    }
+.truck-wipersOn.yes {
+	background-color: white;
+}
 
 .truck-parkBrakeOn {
     position: absolute;
@@ -446,9 +446,9 @@ body {
     z-index: -1;
 }
 
-    .truck-parkBrakeOn.yes {
-        background-color: red;
-    }
+.truck-parkBrakeOn.yes {
+	background-color: red;
+}
 
 .truck-airPressureWarningOn.yes {
     background-color: red;
