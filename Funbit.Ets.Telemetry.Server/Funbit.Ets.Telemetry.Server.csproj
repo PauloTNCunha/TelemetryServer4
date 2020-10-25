@@ -172,560 +172,561 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\images\donate-link.png">
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\images\donate-link.png">
       <Link>Html\images\donate-link.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\template\dashboard.css">
+    </None>
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\template\dashboard.css">
       <Link>Html\skins\template\dashboard.css</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\template\dashboard.html">
+    </None>
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\template\dashboard.html">
       <Link>Html\skins\template\dashboard.html</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\template\dashboard.jpg">
+    </None>
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\template\dashboard.jpg">
       <Link>Html\skins\template\dashboard.jpg</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\template\dashboard.js">
+    </None>
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\template\dashboard.js">
       <Link>Html\skins\template\dashboard.js</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\template\images\bg-off.jpg">
+    </None>
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\template\images\bg-off.jpg">
       <Link>Html\skins\template\images\bg-off.jpg</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\template\images\bg-on.jpg">
+    </None>
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\template\images\bg-on.jpg">
       <Link>Html\skins\template\images\bg-on.jpg</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Ets2Plugins\win_x64\plugins\ets2-telemetry-server.dll">
+    </None>
+    <None Include="Ets2Plugins\win_x64\plugins\ets2-telemetry-server.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    </None>
     <Content Include="Ets2TestTelemetry.json" />
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\template\config.json">
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\template\config.json">
       <Link>Html\skins\template\config.json</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\scripts\app.js">
+    </None>
+    <None Include="Html\scripts\app.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\scripts\config.js">
+    </None>
+    <None Include="Html\scripts\config.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\scripts\dashboard-core.js">
+    </None>
+    <None Include="Html\scripts\dashboard-core.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\scripts\doT.js">
+    </None>
+    <None Include="Html\scripts\doT.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\scripts\jquery.min.js">
+    </None>
+    <None Include="Html\scripts\jquery.min.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\scripts\jquery.signalR-2.2.0.min.js">
+    </None>
+    <None Include="Html\scripts\jquery.signalR-2.2.0.min.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\scripts\menu.js">
+    </None>
+    <None Include="Html\scripts\menu.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\dashboard.css">
+    </None>
+    <None Include="Html\skins\18Speed\dashboard.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\dashboard.html">
+    </None>
+    <None Include="Html\skins\18Speed\dashboard.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\dashboard.jpg">
+    </None>
+    <None Include="Html\skins\18Speed\dashboard.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\dashboard.js">
+    </None>
+    <None Include="Html\skins\18Speed\dashboard.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\1.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\10.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\10.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\1hw.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\1hw.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\1lw.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\1lw.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\2.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\2hw.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\2hw.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\2lw.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\2lw.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\3.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\3.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\3hw.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\3hw.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\3lw.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\3lw.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\4.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\4.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\4hb.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\4hb.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\4hw.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\4hw.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\4lb.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\4lb.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\4lw.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\4lw.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\5.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\5.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\5hb.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\5hb.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\5lb.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\5lb.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\6.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\6.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\6hb.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\6hb.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\6lb.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\6lb.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\7.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\7.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\7hb.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\7hb.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\7lb.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\7lb.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\8.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\8.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\8hb.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\8hb.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\8lb.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\8lb.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\9.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\9.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\arrow.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\arrow.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\Auto.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\Auto.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\AutoBack.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\AutoBack.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\bg-on.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\bg-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\cb.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\cb.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\chb.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\chb.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\chw.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\chw.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\clb.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\clb.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\clw.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\clw.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\gearhighlight.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\gearhighlight.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\gearPattern_10x2.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\gearPattern_10x2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\gearPattern_13x3.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\gearPattern_13x3.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\gearPattern_18x2.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\gearPattern_18x2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\gearPattern_18x4.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\gearPattern_18x4.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\gearPattern_sc_12+2x2.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\gearPattern_sc_12+2x2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\gearPattern_sc_12x2.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\gearPattern_sc_12x2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\gearPattern_vo_12+2x4.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\gearPattern_vo_12+2x4.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\gearPattern_vo_12x4.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\gearPattern_vo_12x4.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\gearPattern_zf_12x2.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\gearPattern_zf_12x2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\gearPattern_zf_16x2.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\gearPattern_zf_16x2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\GM_about1.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\GM_about1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\GM_about2.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\GM_about2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\GM_about3.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\GM_about3.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\hpback.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\hpback.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\hpcover.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\hpcover.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\hpface.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\hpface.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\kph.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\kph.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\mph.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\mph.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\N.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\N.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\needle.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\needle.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\needlesmall.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\needlesmall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\r1h.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\r1h.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\r1l.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\r1l.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\r2h.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\r2h.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\r2l.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\r2l.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\rh.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\rh.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\rl.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\rl.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\RpmArrow.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\RpmArrow.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\Sharrow.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\Sharrow.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\shiftDown.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\shiftDown.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\images\shiftUp.png">
+    </None>
+    <None Include="Html\skins\18Speed\images\shiftUp.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\daf-xf\dashboard.css">
+    </None>
+    <None Include="Html\skins\daf-xf\dashboard.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\daf-xf\dashboard.html">
+    </None>
+    <None Include="Html\skins\daf-xf\dashboard.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\daf-xf\dashboard.jpg">
+    </None>
+    <None Include="Html\skins\daf-xf\dashboard.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\daf-xf\dashboard.js">
+    </None>
+    <None Include="Html\skins\daf-xf\dashboard.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\daf-xf\images\arrow-s.png">
+    </None>
+    <None Include="Html\skins\daf-xf\images\arrow-s.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\daf-xf\images\arrow-s2.png">
+    </None>
+    <None Include="Html\skins\daf-xf\images\arrow-s2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\daf-xf\images\arrow.png">
+    </None>
+    <None Include="Html\skins\daf-xf\images\arrow.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\daf-xf\images\bg-on.jpg">
+    </None>
+    <None Include="Html\skins\daf-xf\images\bg-on.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\daf-xf\images\blinker-left-off.png">
+    </None>
+    <None Include="Html\skins\daf-xf\images\blinker-left-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\daf-xf\images\blinker-left-on.png">
+    </None>
+    <None Include="Html\skins\daf-xf\images\blinker-left-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\daf-xf\images\blinker-right-off.png">
+    </None>
+    <None Include="Html\skins\daf-xf\images\blinker-right-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\daf-xf\images\blinker-right-on.png">
+    </None>
+    <None Include="Html\skins\daf-xf\images\blinker-right-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\daf-xf\images\highbeam-off.png">
+    </None>
+    <None Include="Html\skins\daf-xf\images\highbeam-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\daf-xf\images\highbeam-on.png">
+    </None>
+    <None Include="Html\skins\daf-xf\images\highbeam-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\daf-xf\images\lowbeam-off.png">
+    </None>
+    <None Include="Html\skins\daf-xf\images\lowbeam-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\daf-xf\images\lowbeam-on.png">
+    </None>
+    <None Include="Html\skins\daf-xf\images\lowbeam-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\daf-xf\images\parkingbrake-off.png">
+    </None>
+    <None Include="Html\skins\daf-xf\images\parkingbrake-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\daf-xf\images\parkingbrake.png">
+    </None>
+    <None Include="Html\skins\daf-xf\images\parkingbrake.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\daf-xf\images\parklights-off.png">
+    </None>
+    <None Include="Html\skins\daf-xf\images\parklights-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\daf-xf\images\parklights-on.png">
+    </None>
+    <None Include="Html\skins\daf-xf\images\parklights-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\daf-xf\images\warning-off.png">
+    </None>
+    <None Include="Html\skins\daf-xf\images\warning-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\daf-xf\images\warning.png">
+    </None>
+    <None Include="Html\skins\daf-xf\images\warning.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\default-mph\dashboard.css">
+    </None>
+    <None Include="Html\skins\default-mph\dashboard.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\default-mph\dashboard.html">
+    </None>
+    <None Include="Html\skins\default-mph\dashboard.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\default-mph\dashboard.jpg">
+    </None>
+    <None Include="Html\skins\default-mph\dashboard.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\default-mph\dashboard.js">
+    </None>
+    <None Include="Html\skins\default-mph\dashboard.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\default-mph\images\bg-off.png">
+    </None>
+    <None Include="Html\skins\default-mph\images\bg-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\default-mph\images\bg-on.png">
+    </None>
+    <None Include="Html\skins\default-mph\images\bg-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\default-mph\images\blinker-left-off.png">
+    </None>
+    <None Include="Html\skins\default-mph\images\blinker-left-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\default-mph\images\blinker-left-on.png">
+    </None>
+    <None Include="Html\skins\default-mph\images\blinker-left-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\default-mph\images\blinker-right-off.png">
+    </None>
+    <None Include="Html\skins\default-mph\images\blinker-right-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\default-mph\images\blinker-right-on.png">
+    </None>
+    <None Include="Html\skins\default-mph\images\blinker-right-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\default-mph\images\cruise-off.png">
+    </None>
+    <None Include="Html\skins\default-mph\images\cruise-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\default-mph\images\cruise-on.png">
+    </None>
+    <None Include="Html\skins\default-mph\images\cruise-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\default-mph\images\highbeam-off.png">
+    </None>
+    <None Include="Html\skins\default-mph\images\highbeam-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\default-mph\images\highbeam-on.png">
+    </None>
+    <None Include="Html\skins\default-mph\images\highbeam-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\default-mph\images\lowbeam-off.png">
+    </None>
+    <None Include="Html\skins\default-mph\images\lowbeam-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\default-mph\images\lowbeam-on.png">
+    </None>
+    <None Include="Html\skins\default-mph\images\lowbeam-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\default-mph\images\parklights-off.png">
+    </None>
+    <None Include="Html\skins\default-mph\images\parklights-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\default-mph\images\parklights-on.png">
+    </None>
+    <None Include="Html\skins\default-mph\images\parklights-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\default-mph\images\trailer-off.png">
+    </None>
+    <None Include="Html\skins\default-mph\images\trailer-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\default-mph\images\trailer-on.png">
+    </None>
+    <None Include="Html\skins\default-mph\images\trailer-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\default\config.json">
+    </None>
+    <None Include="Html\skins\default\config.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\daf-xf\config.json">
+    </None>
+    <None Include="Html\skins\daf-xf\config.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\daf-xf\images\Thumbs.db">
+    </None>
+    <None Include="Html\skins\daf-xf\images\Thumbs.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\default-mph\config.json">
+    </None>
+    <None Include="Html\skins\default-mph\config.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\default\dashboard.js">
+    </None>
+    <None Include="Html\skins\default\dashboard.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor2L\config.json">
+    </None>
+    <None Include="Html\skins\jobmonitor2L\config.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor2L\dashboard.js">
+    </None>
+    <None Include="Html\skins\jobmonitor2L\dashboard.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor2P\config.json">
+    </None>
+    <None Include="Html\skins\jobmonitor2P\config.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\config.json">
+    </None>
+    <None Include="Html\skins\jobmonitor\config.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\images\back 2.xcf">
+    </None>
+    <None Include="Html\skins\jobmonitor\images\back 2.xcf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\config.json">
+    </None>
+    <None Include="Html\skins\18Speed\config.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\fonts\AGENCYR.TTF">
+    </None>
+    <None Include="Html\skins\18Speed\fonts\AGENCYR.TTF">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\18Speed\fonts\LCDMN___.TTF">
+    </None>
+    <None Include="Html\skins\18Speed\fonts\LCDMN___.TTF">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <None Include="Html\skins\jobmonitor\images\Thumbs.db" />
-    <None Include="Html\skins\jobmonitor\Thumbs.db" />
-    <Content Include="Html\skins\KW-K100E\dashboard.css">
+    </None>
+    <None Include="Html\skins\jobmonitor\images\Thumbs.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\KW-K100E\dashboard.html">
+    </None>
+    <None Include="Html\skins\KW-K100E\dashboard.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\KW-K100E\dashboard.jpg">
+    </None>
+    <None Include="Html\skins\KW-K100E\dashboard.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\KW-K100E\dashboard.js">
+    </None>
+    <None Include="Html\skins\KW-K100E\dashboard.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\KW-K100E\images\ArrowH.png">
+    </None>
+    <None Include="Html\skins\KW-K100E\dashboard.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\KW-K100E\images\ArrowL.png">
+    </None>
+    <None Include="Html\skins\KW-K100E\images\ArrowH.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\KW-K100E\images\ArrowM.png">
+    </None>
+    <None Include="Html\skins\KW-K100E\images\ArrowL.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\KW-K100E\images\ArrowS.png">
+    </None>
+    <None Include="Html\skins\KW-K100E\images\ArrowM.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\KW-K100E\images\bg-off.png">
+    </None>
+    <None Include="Html\skins\KW-K100E\images\ArrowS.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\KW-K100E\images\bg-on.png">
+    </None>
+    <None Include="Html\skins\KW-K100E\images\bg-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\KW-K100E\images\kph.png">
+    </None>
+    <None Include="Html\skins\KW-K100E\images\bg-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\KW-K100E\images\mph.png">
+    </None>
+    <None Include="Html\skins\KW-K100E\images\kph.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\config.json">
+    </None>
+    <None Include="Html\skins\KW-K100E\images\mph.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\config.json">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\config.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\mercedes-atego\config.json">
+    </None>
+    <None Include="Html\skins\man-tgx\config.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\config.json">
+    </None>
+    <None Include="Html\skins\mercedes-atego\config.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\config.json">
+    </None>
+    <None Include="Html\skins\peterbilt579\config.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\fonts\dosapp.fon">
+    </None>
+    <None Include="Html\skins\rd-info\config.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\fonts\DSDIGI.eot">
+    </None>
+    <None Include="Html\skins\rd-info\fonts\dosapp.fon">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\fonts\DSDIGI.ttf">
+    </None>
+    <None Include="Html\skins\rd-info\fonts\DSDIGI.eot">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\fonts\DSDIGI.woff">
+    </None>
+    <None Include="Html\skins\rd-info\fonts\DSDIGI.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\fonts\OCRAStd.otf">
+    </None>
+    <None Include="Html\skins\rd-info\fonts\DSDIGI.woff">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\fonts\Open 24 Display St.ttf">
+    </None>
+    <None Include="Html\skins\rd-info\fonts\OCRAStd.otf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\fonts\smalle.fon">
+    </None>
+    <None Include="Html\skins\rd-info\fonts\Open 24 Display St.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\fonts\vgaoem.fon">
+    </None>
+    <None Include="Html\skins\rd-info\fonts\smalle.fon">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\scania\config.json">
+    </None>
+    <None Include="Html\skins\rd-info\fonts\vgaoem.fon">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\config.json">
+    </None>
+    <None Include="Html\skins\scania\config.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\fonts\Barlow-Regular.ttf">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\config.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\fonts\DS-Digital-Bold-Italic.ttf">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\fonts\Barlow-Regular.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\fonts\DS-Digital-Bold.ttf">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\fonts\DS-Digital-Bold-Italic.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\fonts\Highway-Gothic-Expanded.ttf">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\fonts\DS-Digital-Bold.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\fonts\Highway-Gothic.ttf">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\fonts\Highway-Gothic-Expanded.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\fonts\Khand-Bold.ttf">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\fonts\Highway-Gothic.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\manifest.json">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\fonts\Khand-Bold.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\template\config.json">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\manifest.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\volvo-fh\config.json">
+    </None>
+    <None Include="Html\skins\template\config.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\KW-K100E\config.json">
+    </None>
+    <None Include="Html\skins\volvo-fh\config.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    </None>
+    <None Include="Html\skins\KW-K100E\config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Resources\check-error.png" />
     <None Include="Resources\check-on.png" />
     <None Include="Resources\check-off.png" />
@@ -742,936 +743,936 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\dashboard-host.css">
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\dashboard-host.css">
       <Link>Html\dashboard-host.css</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\dashboard-host.html">
+    </None>
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\dashboard-host.html">
       <Link>Html\dashboard-host.html</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\images\app-icon.png">
+    </None>
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\images\app-icon.png">
       <Link>Html\images\app-icon.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\images\disclosure.png">
+    </None>
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\images\disclosure.png">
       <Link>Html\images\disclosure.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\images\menu-background.png">
+    </None>
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\images\menu-background.png">
       <Link>Html\images\menu-background.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\index.css">
+    </None>
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\index.css">
       <Link>Html\index.css</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\index.html">
+    </None>
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\index.html">
       <Link>Html\index.html</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\bg-off.png">
+    </None>
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\bg-off.png">
       <Link>Html\skins\default\images\bg-off.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\bg-on.png">
+    </None>
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\bg-on.png">
       <Link>Html\skins\default\images\bg-on.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\blinker-left-off.png">
+    </None>
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\blinker-left-off.png">
       <Link>Html\skins\default\images\blinker-left-off.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\blinker-left-on.png">
+    </None>
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\blinker-left-on.png">
       <Link>Html\skins\default\images\blinker-left-on.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\blinker-right-off.png">
+    </None>
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\blinker-right-off.png">
       <Link>Html\skins\default\images\blinker-right-off.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\blinker-right-on.png">
+    </None>
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\blinker-right-on.png">
       <Link>Html\skins\default\images\blinker-right-on.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\cruise-off.png">
+    </None>
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\cruise-off.png">
       <Link>Html\skins\default\images\cruise-off.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\cruise-on.png">
+    </None>
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\cruise-on.png">
       <Link>Html\skins\default\images\cruise-on.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\highbeam-off.png">
+    </None>
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\highbeam-off.png">
       <Link>Html\skins\default\images\highbeam-off.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\highbeam-on.png">
+    </None>
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\highbeam-on.png">
       <Link>Html\skins\default\images\highbeam-on.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\lowbeam-off.png">
+    </None>
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\lowbeam-off.png">
       <Link>Html\skins\default\images\lowbeam-off.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\lowbeam-on.png">
+    </None>
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\lowbeam-on.png">
       <Link>Html\skins\default\images\lowbeam-on.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\parklights-off.png">
+    </None>
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\parklights-off.png">
       <Link>Html\skins\default\images\parklights-off.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\parklights-on.png">
+    </None>
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\parklights-on.png">
       <Link>Html\skins\default\images\parklights-on.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\trailer-off.png">
+    </None>
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\trailer-off.png">
       <Link>Html\skins\default\images\trailer-off.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\trailer-on.png">
+    </None>
+    <None Include="..\Funbit.Ets.Telemetry.Mobile\www\skins\default\images\trailer-on.png">
       <Link>Html\skins\default\images\trailer-on.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\cordova.js">
+    </None>
+    <None Include="Html\cordova.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\scripts\cordova-app.js">
+    </None>
+    <None Include="Html\scripts\cordova-app.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\scripts\platformOverrides.js">
+    </None>
+    <None Include="Html\scripts\platformOverrides.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\default\dashboard.css">
+    </None>
+    <None Include="Html\skins\default\dashboard.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\default\dashboard.html">
+    </None>
+    <None Include="Html\skins\default\dashboard.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\default\dashboard.jpg">
+    </None>
+    <None Include="Html\skins\default\dashboard.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor2L\dashboard.css">
+    </None>
+    <None Include="Html\skins\jobmonitor2L\dashboard.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor2L\dashboard.html">
+    </None>
+    <None Include="Html\skins\jobmonitor2L\dashboard.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor2L\dashboard.jpg">
+    </None>
+    <None Include="Html\skins\jobmonitor2L\dashboard.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor2P\dashboard.css">
+    </None>
+    <None Include="Html\skins\jobmonitor2P\dashboard.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor2P\dashboard.html">
+    </None>
+    <None Include="Html\skins\jobmonitor2P\dashboard.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor2P\dashboard.jpg">
+    </None>
+    <None Include="Html\skins\jobmonitor2P\dashboard.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    </None>
     <Content Include="Html\skins\jobmonitor2P\dashboard.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Html\skins\jobmonitor\dashboard.css">
+    <None Include="Html\skins\jobmonitor\dashboard.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\dashboard.html">
+    </None>
+    <None Include="Html\skins\jobmonitor\dashboard.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\dashboard.jpg">
+    </None>
+    <None Include="Html\skins\jobmonitor\dashboard.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\dashboard.js">
+    </None>
+    <None Include="Html\skins\jobmonitor\dashboard.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\images\bg.png">
+    </None>
+    <None Include="Html\skins\jobmonitor\images\bg.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\images\fatigue.png">
+    </None>
+    <None Include="Html\skins\jobmonitor\images\fatigue.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\images\fatigue0.png">
+    </None>
+    <None Include="Html\skins\jobmonitor\images\fatigue0.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\images\fatigue1.png">
+    </None>
+    <None Include="Html\skins\jobmonitor\images\fatigue1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\images\fatigue2.png">
+    </None>
+    <None Include="Html\skins\jobmonitor\images\fatigue2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\images\fatigue3.png">
+    </None>
+    <None Include="Html\skins\jobmonitor\images\fatigue3.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\images\fatigueguage - Copia.png">
+    </None>
+    <None Include="Html\skins\jobmonitor\images\fatigueguage - Copia.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\images\fatigueguage.png">
+    </None>
+    <None Include="Html\skins\jobmonitor\images\fatigueguage.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\images\indicator.png">
+    </None>
+    <None Include="Html\skins\jobmonitor\images\indicator.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\images\page.png">
+    </None>
+    <None Include="Html\skins\jobmonitor\images\page.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\images\speedlimitwarningoff.png">
+    </None>
+    <None Include="Html\skins\jobmonitor\images\speedlimitwarningoff.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\images\speedlimitwarningofftownon.png">
+    </None>
+    <None Include="Html\skins\jobmonitor\images\speedlimitwarningofftownon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\images\speedlimitwarningon.png">
+    </None>
+    <None Include="Html\skins\jobmonitor\images\speedlimitwarningon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\images\speedlimitwarningontownon.png">
+    </None>
+    <None Include="Html\skins\jobmonitor\images\speedlimitwarningontownon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\images\speedupwarning0.png">
+    </None>
+    <None Include="Html\skins\jobmonitor\images\speedupwarning0.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\images\speedupwarning1.png">
+    </None>
+    <None Include="Html\skins\jobmonitor\images\speedupwarning1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\images\speedupwarning2.png">
+    </None>
+    <None Include="Html\skins\jobmonitor\images\speedupwarning2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\images\trailerwearoff.png">
+    </None>
+    <None Include="Html\skins\jobmonitor\images\trailerwearoff.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\images\trailerwearon.png">
+    </None>
+    <None Include="Html\skins\jobmonitor\images\trailerwearon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\images\truckwearoff.png">
+    </None>
+    <None Include="Html\skins\jobmonitor\images\truckwearoff.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\images\truckwearon.png">
+    </None>
+    <None Include="Html\skins\jobmonitor\images\truckwearon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\images\truckwheelwearoff.png">
+    </None>
+    <None Include="Html\skins\jobmonitor\images\truckwheelwearoff.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\images\truckwheelwearon.png">
+    </None>
+    <None Include="Html\skins\jobmonitor\images\truckwheelwearon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\sounds\A-Tone-His_Self-1266414414.mp3">
+    </None>
+    <None Include="Html\skins\jobmonitor\sounds\A-Tone-His_Self-1266414414.mp3">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\sounds\beep-25.mp3">
+    </None>
+    <None Include="Html\skins\jobmonitor\sounds\beep-25.mp3">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\sounds\beep-30b.mp3">
+    </None>
+    <None Include="Html\skins\jobmonitor\sounds\beep-30b.mp3">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\sounds\beep.mp3">
+    </None>
+    <None Include="Html\skins\jobmonitor\sounds\beep.mp3">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\sounds\button-27.mp3">
+    </None>
+    <None Include="Html\skins\jobmonitor\sounds\button-27.mp3">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\sounds\Checkout Scanner Beep-SoundBible.com-593325210.mp3">
+    </None>
+    <None Include="Html\skins\jobmonitor\sounds\Checkout Scanner Beep-SoundBible.com-593325210.mp3">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\sounds\Robot_blip-Marianne_Gagnon-120342607.mp3">
+    </None>
+    <None Include="Html\skins\jobmonitor\sounds\Robot_blip-Marianne_Gagnon-120342607.mp3">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\jobmonitor\used images.txt">
+    </None>
+    <None Include="Html\skins\jobmonitor\used images.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\dashboard.css">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\dashboard.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\dashboard.html">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\dashboard.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\dashboard.jpg">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\dashboard.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\dashboard.js">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\dashboard.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\dashboard_kph.jpg">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\dashboard_kph.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\images\air-warning-off.png">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\images\air-warning-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\images\air-warning.png">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\images\air-warning.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\images\arrow-s.png">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\images\arrow-s.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\images\arrow.png">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\images\arrow.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\images\bg-on.jpg">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\images\bg-on.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\images\bg-on_KPH.jpg">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\images\bg-on_KPH.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\images\blinker-left-off.png">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\images\blinker-left-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\images\blinker-left-on.png">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\images\blinker-left-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\images\blinker-right-off.png">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\images\blinker-right-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\images\blinker-right-on.png">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\images\blinker-right-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\images\cruise-off.png">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\images\cruise-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\images\cruise-on.png">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\images\cruise-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\images\fuel-warning-off.png">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\images\fuel-warning-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\images\fuel-warning.png">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\images\fuel-warning.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\images\highbeam-off.png">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\images\highbeam-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\images\highbeam-on.png">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\images\highbeam-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\images\lowbeam-off.png">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\images\lowbeam-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\images\lowbeam-on.png">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\images\lowbeam-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\images\parking-brake-off.png">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\images\parking-brake-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\images\parking-brake.png">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\images\parking-brake.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\images\parklights-off.png">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\images\parklights-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\images\parklights-on.png">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\images\parklights-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\images\retarder-off.png">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\images\retarder-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\images\retarder.png">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\images\retarder.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\images\warning-off.png">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\images\warning-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx-mph\images\warning.png">
+    </None>
+    <None Include="Html\skins\man-tgx-mph\images\warning.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\dashboard.css">
+    </None>
+    <None Include="Html\skins\man-tgx\dashboard.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\dashboard.html">
+    </None>
+    <None Include="Html\skins\man-tgx\dashboard.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\dashboard.jpg">
+    </None>
+    <None Include="Html\skins\man-tgx\dashboard.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\dashboard.js">
+    </None>
+    <None Include="Html\skins\man-tgx\dashboard.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\images\air-warning-off.png">
+    </None>
+    <None Include="Html\skins\man-tgx\images\air-warning-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\images\air-warning.png">
+    </None>
+    <None Include="Html\skins\man-tgx\images\air-warning.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\images\arrow-s.png">
+    </None>
+    <None Include="Html\skins\man-tgx\images\arrow-s.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\images\arrow.png">
+    </None>
+    <None Include="Html\skins\man-tgx\images\arrow.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\images\bg-on.jpg">
+    </None>
+    <None Include="Html\skins\man-tgx\images\bg-on.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\images\blinker-left-off.png">
+    </None>
+    <None Include="Html\skins\man-tgx\images\blinker-left-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\images\blinker-left-on.png">
+    </None>
+    <None Include="Html\skins\man-tgx\images\blinker-left-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\images\blinker-right-off.png">
+    </None>
+    <None Include="Html\skins\man-tgx\images\blinker-right-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\images\blinker-right-on.png">
+    </None>
+    <None Include="Html\skins\man-tgx\images\blinker-right-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\images\cruise-off.png">
+    </None>
+    <None Include="Html\skins\man-tgx\images\cruise-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\images\cruise-on.png">
+    </None>
+    <None Include="Html\skins\man-tgx\images\cruise-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\images\fuel-warning-off.png">
+    </None>
+    <None Include="Html\skins\man-tgx\images\fuel-warning-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\images\fuel-warning.png">
+    </None>
+    <None Include="Html\skins\man-tgx\images\fuel-warning.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\images\highbeam-off.png">
+    </None>
+    <None Include="Html\skins\man-tgx\images\highbeam-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\images\highbeam-on.png">
+    </None>
+    <None Include="Html\skins\man-tgx\images\highbeam-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\images\lowbeam-off.png">
+    </None>
+    <None Include="Html\skins\man-tgx\images\lowbeam-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\images\lowbeam-on.png">
+    </None>
+    <None Include="Html\skins\man-tgx\images\lowbeam-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\images\parking-brake-off.png">
+    </None>
+    <None Include="Html\skins\man-tgx\images\parking-brake-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\images\parking-brake.png">
+    </None>
+    <None Include="Html\skins\man-tgx\images\parking-brake.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\images\parklights-off.png">
+    </None>
+    <None Include="Html\skins\man-tgx\images\parklights-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\images\parklights-on.png">
+    </None>
+    <None Include="Html\skins\man-tgx\images\parklights-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\images\retarder-off.png">
+    </None>
+    <None Include="Html\skins\man-tgx\images\retarder-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\images\retarder.png">
+    </None>
+    <None Include="Html\skins\man-tgx\images\retarder.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\images\warning-off.png">
+    </None>
+    <None Include="Html\skins\man-tgx\images\warning-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\man-tgx\images\warning.png">
+    </None>
+    <None Include="Html\skins\man-tgx\images\warning.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\mercedes-atego\dashboard.css">
+    </None>
+    <None Include="Html\skins\mercedes-atego\dashboard.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\mercedes-atego\dashboard.html">
+    </None>
+    <None Include="Html\skins\mercedes-atego\dashboard.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\mercedes-atego\dashboard.jpg">
+    </None>
+    <None Include="Html\skins\mercedes-atego\dashboard.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\mercedes-atego\dashboard.js">
+    </None>
+    <None Include="Html\skins\mercedes-atego\dashboard.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\mercedes-atego\images\arrow-s.png">
+    </None>
+    <None Include="Html\skins\mercedes-atego\images\arrow-s.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\mercedes-atego\images\arrow.png">
+    </None>
+    <None Include="Html\skins\mercedes-atego\images\arrow.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\mercedes-atego\images\bg-on.jpg">
+    </None>
+    <None Include="Html\skins\mercedes-atego\images\bg-on.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\mercedes-atego\images\blinker-left-off.png">
+    </None>
+    <None Include="Html\skins\mercedes-atego\images\blinker-left-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\mercedes-atego\images\blinker-left-on.png">
+    </None>
+    <None Include="Html\skins\mercedes-atego\images\blinker-left-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\mercedes-atego\images\blinker-right-off.png">
+    </None>
+    <None Include="Html\skins\mercedes-atego\images\blinker-right-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\mercedes-atego\images\blinker-right-on.png">
+    </None>
+    <None Include="Html\skins\mercedes-atego\images\blinker-right-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\mercedes-atego\images\fuel-warning-off.png">
+    </None>
+    <None Include="Html\skins\mercedes-atego\images\fuel-warning-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\mercedes-atego\images\fuel-warning.png">
+    </None>
+    <None Include="Html\skins\mercedes-atego\images\fuel-warning.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\mercedes-atego\images\highbeam-off.png">
+    </None>
+    <None Include="Html\skins\mercedes-atego\images\highbeam-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\mercedes-atego\images\highbeam-on.png">
+    </None>
+    <None Include="Html\skins\mercedes-atego\images\highbeam-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\mercedes-atego\images\lowbeam-off.png">
+    </None>
+    <None Include="Html\skins\mercedes-atego\images\lowbeam-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\mercedes-atego\images\lowbeam-on.png">
+    </None>
+    <None Include="Html\skins\mercedes-atego\images\lowbeam-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\mercedes-atego\images\parkingbrake-off.png">
+    </None>
+    <None Include="Html\skins\mercedes-atego\images\parkingbrake-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\mercedes-atego\images\parkingbrake.png">
+    </None>
+    <None Include="Html\skins\mercedes-atego\images\parkingbrake.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\mercedes-atego\images\parklights-off.png">
+    </None>
+    <None Include="Html\skins\mercedes-atego\images\parklights-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\mercedes-atego\images\parklights-on.png">
+    </None>
+    <None Include="Html\skins\mercedes-atego\images\parklights-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\mercedes-atego\images\warning-off.png">
+    </None>
+    <None Include="Html\skins\mercedes-atego\images\warning-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\mercedes-atego\images\warning.png">
+    </None>
+    <None Include="Html\skins\mercedes-atego\images\warning.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\dashboard.css">
+    </None>
+    <None Include="Html\skins\peterbilt579\dashboard.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\dashboard.html">
+    </None>
+    <None Include="Html\skins\peterbilt579\dashboard.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\dashboard.jpg">
+    </None>
+    <None Include="Html\skins\peterbilt579\dashboard.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\dashboard.js">
+    </None>
+    <None Include="Html\skins\peterbilt579\dashboard.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\airPressureEmergencyOn-on.png">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\airPressureEmergencyOn-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\airPressureWarningOn-on.png">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\airPressureWarningOn-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\airPressureWarningOn2-on.png">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\airPressureWarningOn2-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\arrow-s.png">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\arrow-s.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\arrow.png">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\arrow.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\batteryVoltageWarningOn-on.png">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\batteryVoltageWarningOn-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\bg-off.jpg">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\bg-off.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\bg-on.jpg">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\bg-on.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\blinker-left-off.png">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\blinker-left-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\blinker-left-on.png">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\blinker-left-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\blinker-right-off.png">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\blinker-right-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\blinker-right-on.png">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\blinker-right-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\cruise-off.png">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\cruise-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\cruise-on.png">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\cruise-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\fuelWarningOn-on.png">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\fuelWarningOn-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\highbeam-off.png">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\highbeam-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\highbeam-on.png">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\highbeam-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\kolko.png">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\kolko.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\lowbeam-off.png">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\lowbeam-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\lowbeam-on.png">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\lowbeam-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\motorBrakeOn-on.png">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\motorBrakeOn-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\off.jpg">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\off.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\oilPressureWarningOn-on.png">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\oilPressureWarningOn-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\park-on.png">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\park-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\parklights-off.png">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\parklights-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\parklights-on.png">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\parklights-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\retarder-on.png">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\retarder-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\trailer-off.png">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\trailer-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\trailer-on.png">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\trailer-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\peterbilt579\images\waterTemperatureWarningOn-on.png">
+    </None>
+    <None Include="Html\skins\peterbilt579\images\waterTemperatureWarningOn-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\dashboard.css">
+    </None>
+    <None Include="Html\skins\rd-info\dashboard.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\dashboard.html">
+    </None>
+    <None Include="Html\skins\rd-info\dashboard.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\dashboard.jpg">
+    </None>
+    <None Include="Html\skins\rd-info\dashboard.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\dashboard.js">
+    </None>
+    <None Include="Html\skins\rd-info\dashboard.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\fonts\font.css">
+    </None>
+    <None Include="Html\skins\rd-info\fonts\font.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\fonts\readme.txt">
+    </None>
+    <None Include="Html\skins\rd-info\fonts\readme.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\images\airpressure-on.png">
+    </None>
+    <None Include="Html\skins\rd-info\images\airpressure-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\images\auxlights-off.png">
+    </None>
+    <None Include="Html\skins\rd-info\images\auxlights-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\images\auxlights-on.png">
+    </None>
+    <None Include="Html\skins\rd-info\images\auxlights-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\images\beacon-on.png">
+    </None>
+    <None Include="Html\skins\rd-info\images\beacon-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\images\bg-off.png">
+    </None>
+    <None Include="Html\skins\rd-info\images\bg-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\images\bg-on.png">
+    </None>
+    <None Include="Html\skins\rd-info\images\bg-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\images\cruisecontrol-on.png">
+    </None>
+    <None Include="Html\skins\rd-info\images\cruisecontrol-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\images\dashalert-off.png">
+    </None>
+    <None Include="Html\skins\rd-info\images\dashalert-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\images\highbeam-on.png">
+    </None>
+    <None Include="Html\skins\rd-info\images\highbeam-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\images\lowbeam-on.png">
+    </None>
+    <None Include="Html\skins\rd-info\images\lowbeam-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\images\parkbrake-on.png">
+    </None>
+    <None Include="Html\skins\rd-info\images\parkbrake-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\images\parklight-on.png">
+    </None>
+    <None Include="Html\skins\rd-info\images\parklight-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\images\sidebar01.png">
+    </None>
+    <None Include="Html\skins\rd-info\images\sidebar01.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\images\sidebar02.png">
+    </None>
+    <None Include="Html\skins\rd-info\images\sidebar02.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\images\warning-on.png">
+    </None>
+    <None Include="Html\skins\rd-info\images\warning-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\rd-info\README.txt">
+    </None>
+    <None Include="Html\skins\rd-info\README.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\scania\dashboard.css">
+    </None>
+    <None Include="Html\skins\scania\dashboard.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\scania\dashboard.html">
+    </None>
+    <None Include="Html\skins\scania\dashboard.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\scania\dashboard.jpg">
+    </None>
+    <None Include="Html\skins\scania\dashboard.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\scania\dashboard.js">
+    </None>
+    <None Include="Html\skins\scania\dashboard.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\scania\images\app-icon.png">
+    </None>
+    <None Include="Html\skins\scania\images\app-icon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\scania\images\bg-on.jpg">
+    </None>
+    <None Include="Html\skins\scania\images\bg-on.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\scania\images\blinker-left-off.png">
+    </None>
+    <None Include="Html\skins\scania\images\blinker-left-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\scania\images\blinker-left-on.png">
+    </None>
+    <None Include="Html\skins\scania\images\blinker-left-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\scania\images\blinker-right-off.png">
+    </None>
+    <None Include="Html\skins\scania\images\blinker-right-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\scania\images\blinker-right-on.png">
+    </None>
+    <None Include="Html\skins\scania\images\blinker-right-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\scania\images\cruise-off.png">
+    </None>
+    <None Include="Html\skins\scania\images\cruise-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\scania\images\cruise-on.png">
+    </None>
+    <None Include="Html\skins\scania\images\cruise-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\scania\images\fuel-warning-off.png">
+    </None>
+    <None Include="Html\skins\scania\images\fuel-warning-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\scania\images\fuel-warning.png">
+    </None>
+    <None Include="Html\skins\scania\images\fuel-warning.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\scania\images\gauge-arrow-s.png">
+    </None>
+    <None Include="Html\skins\scania\images\gauge-arrow-s.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\scania\images\gauge-arrow-s2.png">
+    </None>
+    <None Include="Html\skins\scania\images\gauge-arrow-s2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\scania\images\gauge-arrow.png">
+    </None>
+    <None Include="Html\skins\scania\images\gauge-arrow.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\scania\images\handbrake-off.png">
+    </None>
+    <None Include="Html\skins\scania\images\handbrake-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\scania\images\handbrake.png">
+    </None>
+    <None Include="Html\skins\scania\images\handbrake.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\scania\images\highbeam-off.png">
+    </None>
+    <None Include="Html\skins\scania\images\highbeam-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\scania\images\highbeam-on.png">
+    </None>
+    <None Include="Html\skins\scania\images\highbeam-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\scania\images\lowbeam-off.png">
+    </None>
+    <None Include="Html\skins\scania\images\lowbeam-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\scania\images\lowbeam-on.png">
+    </None>
+    <None Include="Html\skins\scania\images\lowbeam-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\scania\images\parklights-off.png">
+    </None>
+    <None Include="Html\skins\scania\images\parklights-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\scania\images\parklights-on.png">
+    </None>
+    <None Include="Html\skins\scania\images\parklights-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\scania\images\warning-off.png">
+    </None>
+    <None Include="Html\skins\scania\images\warning-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\scania\images\warning.png">
+    </None>
+    <None Include="Html\skins\scania\images\warning.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\dashboard.css">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\dashboard.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\dashboard.html">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\dashboard.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\dashboard.jpg">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\dashboard.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\dashboard.js">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\dashboard.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\fonts\Barlow.txt">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\fonts\Barlow.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\fonts\DS-Digital.txt">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\fonts\DS-Digital.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\fonts\Khand.txt">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\fonts\Khand.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\images\android-icon.png">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\images\android-icon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\images\apple-touch-icon.png">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\images\apple-touch-icon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\images\_bigDial.png">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\images\_bigDial.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\images\_smallDial.png">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\images\_smallDial.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\images\_speedLimit.png">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\images\_speedLimit.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\images\_symbol.png">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\images\_symbol.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\images\_tipsTap.png">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\images\_tipsTap.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\images\_truckBrand.png">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\images\_truckBrand.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\images\_truckBrandDaf.png">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\images\_truckBrandDaf.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\images\_truckBrandFord.png">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\images\_truckBrandFord.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\images\_truckBrandFreightliner.png">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\images\_truckBrandFreightliner.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\images\_truckBrandHino.png">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\images\_truckBrandHino.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\images\_truckBrandInternational.png">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\images\_truckBrandInternational.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\images\_truckBrandIveco.png">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\images\_truckBrandIveco.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\images\_truckBrandKamaz.png">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\images\_truckBrandKamaz.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\images\_truckBrandKenworth.png">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\images\_truckBrandKenworth.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\images\_truckBrandMack.png">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\images\_truckBrandMack.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\images\_truckBrandMan.png">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\images\_truckBrandMan.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\images\_truckBrandMercedesBenz.png">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\images\_truckBrandMercedesBenz.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\images\_truckBrandPeterbilt.png">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\images\_truckBrandPeterbilt.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\images\_truckBrandRenault.png">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\images\_truckBrandRenault.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\images\_truckBrandScania.png">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\images\_truckBrandScania.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\images\_truckBrandSisu.png">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\images\_truckBrandSisu.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\images\_truckBrandTesla.png">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\images\_truckBrandTesla.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\images\_truckBrandVolvo.png">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\images\_truckBrandVolvo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\t-dashboard-4x\images\_truckBrandWesternStar.png">
+    </None>
+    <None Include="Html\skins\t-dashboard-4x\images\_truckBrandWesternStar.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\template\dashboard.css">
+    </None>
+    <None Include="Html\skins\template\dashboard.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\template\dashboard.html">
+    </None>
+    <None Include="Html\skins\template\dashboard.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\template\dashboard.jpg">
+    </None>
+    <None Include="Html\skins\template\dashboard.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\template\dashboard.js">
+    </None>
+    <None Include="Html\skins\template\dashboard.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\template\images\bg-off.jpg">
+    </None>
+    <None Include="Html\skins\template\images\bg-off.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\template\images\bg-on.jpg">
+    </None>
+    <None Include="Html\skins\template\images\bg-on.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\volvo-fh\dashboard.css">
+    </None>
+    <None Include="Html\skins\volvo-fh\dashboard.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\volvo-fh\dashboard.html">
+    </None>
+    <None Include="Html\skins\volvo-fh\dashboard.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\volvo-fh\dashboard.jpg">
+    </None>
+    <None Include="Html\skins\volvo-fh\dashboard.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\volvo-fh\dashboard.js">
+    </None>
+    <None Include="Html\skins\volvo-fh\dashboard.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\volvo-fh\images\arrow.png">
+    </None>
+    <None Include="Html\skins\volvo-fh\images\arrow.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\volvo-fh\images\bg-on.jpg">
+    </None>
+    <None Include="Html\skins\volvo-fh\images\bg-on.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\volvo-fh\images\blinker-left-off.png">
+    </None>
+    <None Include="Html\skins\volvo-fh\images\blinker-left-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\volvo-fh\images\blinker-left-on.png">
+    </None>
+    <None Include="Html\skins\volvo-fh\images\blinker-left-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\volvo-fh\images\blinker-right-off.png">
+    </None>
+    <None Include="Html\skins\volvo-fh\images\blinker-right-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\volvo-fh\images\blinker-right-on.png">
+    </None>
+    <None Include="Html\skins\volvo-fh\images\blinker-right-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\volvo-fh\images\cruise-off.png">
+    </None>
+    <None Include="Html\skins\volvo-fh\images\cruise-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\volvo-fh\images\cruise-on.png">
+    </None>
+    <None Include="Html\skins\volvo-fh\images\cruise-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\volvo-fh\images\gauge-arrow-s.png">
+    </None>
+    <None Include="Html\skins\volvo-fh\images\gauge-arrow-s.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\volvo-fh\images\highbeam-off.png">
+    </None>
+    <None Include="Html\skins\volvo-fh\images\highbeam-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\volvo-fh\images\highbeam-on.png">
+    </None>
+    <None Include="Html\skins\volvo-fh\images\highbeam-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\volvo-fh\images\lowbeam-off.png">
+    </None>
+    <None Include="Html\skins\volvo-fh\images\lowbeam-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\volvo-fh\images\lowbeam-on.png">
+    </None>
+    <None Include="Html\skins\volvo-fh\images\lowbeam-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\volvo-fh\images\parkBrakeOn-off.png">
+    </None>
+    <None Include="Html\skins\volvo-fh\images\parkBrakeOn-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\volvo-fh\images\parkBrakeOn.png">
+    </None>
+    <None Include="Html\skins\volvo-fh\images\parkBrakeOn.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\volvo-fh\images\parklights-off.png">
+    </None>
+    <None Include="Html\skins\volvo-fh\images\parklights-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\volvo-fh\images\parklights-on.png">
+    </None>
+    <None Include="Html\skins\volvo-fh\images\parklights-on.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\volvo-fh\images\retarder - Kopie.png">
+    </None>
+    <None Include="Html\skins\volvo-fh\images\retarder - Kopie.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\volvo-fh\images\retarder-off.png">
+    </None>
+    <None Include="Html\skins\volvo-fh\images\retarder-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\volvo-fh\images\retarder.png">
+    </None>
+    <None Include="Html\skins\volvo-fh\images\retarder.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\volvo-fh\images\warning-off.png">
+    </None>
+    <None Include="Html\skins\volvo-fh\images\warning-off.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Html\skins\volvo-fh\images\warning.png">
+    </None>
+    <None Include="Html\skins\volvo-fh\images\warning.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\app.ico" />
+    </None>
+    <None Include="Resources\app.ico" />
     <EmbeddedResource Include="SetupForm.resx">
       <DependentUpon>SetupForm.cs</DependentUpon>
     </EmbeddedResource>

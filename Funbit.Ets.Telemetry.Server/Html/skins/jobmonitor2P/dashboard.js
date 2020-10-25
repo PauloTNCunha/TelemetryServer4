@@ -51,7 +51,6 @@ var tWeeday = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 var zDay;           //day zero 
 var jobWoT;
 var deadlineTimeEM;
-var gameTime;
 var actualTable = document.getElementById('Principal');
 var driverWorkTime;
 var driverSleepTime;
@@ -253,7 +252,6 @@ unitConverter = function (value) {
 
 var trucklLicensePlate;
 var truckWheelCount;
-var truckWearWheels;
 var truckActiveWheels;
 SetTruck = function (data) {
     if (trucklLicensePlate === data.truck.licensePlate && truckWheelCount === data.truck.wheelCount)
@@ -309,7 +307,6 @@ SetTruck = function (data) {
 };
 
 var trailer0LicensePlate;
-var trailerWearWheels;
 var trailerWheelCount;
 var trailerActiveWheels;
 SetTrailer = function (data) {
@@ -469,10 +466,13 @@ Funbit.Ets.Telemetry.Dashboard.prototype.filter = function (data, utils) {
     //message += 'Gear: ' + data.shifter.slots[data.shifter.slot].seletors[data.shifter.selector].gearName + lb;
     //message += 'Best Gear: ' + data.shifter.bestGearName + lb;
     if (data.truck.engineOn === true)
-        if (data.shifter.gear !== data.shifter.bestGear)
-            message += 'Best Gear: ' + data.shifter.bestGearName + lb;
+        if ((data.truck.engineRpm > 600 && data.truck.engineRpm < 1000) || data.truck.engineRpm > 1500)
+            if (data.shifter.gear !== data.shifter.bestGear)
+                message += 'Best Gear: ' + data.shifter.bestGearName + lb;
     if (data.truck.retarderBrake > 0)
         message += 'Retarder: ' + data.truck.retarderBrake + '/' + data.truck.retarderStepCount + lb;
+    if (data.truck.speed > 10 && data.truck.lightsParkingOn === false)
+        message += 'Turn the lights on' + lb;
 
     if (data.game.connected === true) {
         SetTruck(data);

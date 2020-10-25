@@ -370,8 +370,8 @@ namespace Funbit.Ets.Telemetry.Server.Data
                         break;
                     case 2:
                         rvGears = (Type == "hshifter")
-                            ? rvGears = new string[] { "N", "RL", "RH" }
-                            : rvGears = new string[] { "N", "R1", "R2" };
+                            ? new string[] { "N", "RL", "RH" }
+                            : new string[] { "N", "R1", "R2" };
                         break;
                     case 1:
                         rvGears = new string[] { "N", "R" };
@@ -485,7 +485,18 @@ namespace Funbit.Ets.Telemetry.Server.Data
                     slots = new IEts2ShifterSlot[1];
                     slots[0] = new Ets2ShifterSlot(_rawData, SelectorCount, 0, ForwardGearNames, ReverseGearNames);
                     slots[0].Seletors[0].Gear = Gear;
-                    slots[0].Seletors[0].GearName = (Gear < 0) ? ReverseGearNames[Math.Abs(Gear)] : ForwardGearNames[Gear];
+                    slots[0].Seletors[0].GearName = "Unknow";
+                    if (Gear < 0)
+                    {
+                        if (Math.Abs(Gear) < ReverseGearNames.Length)
+                            slots[0].Seletors[0].GearName = ReverseGearNames[Math.Abs(Gear)];
+                    }
+                    else
+                    {
+                        if (Gear < ForwardGearNames.Length)
+                            slots[0].Seletors[0].GearName = ForwardGearNames[Gear];
+
+                    }
                 }
                 return slots;
             }
@@ -509,7 +520,7 @@ namespace Funbit.Ets.Telemetry.Server.Data
                     if (_rawData.Struct.shifterToggle != null)
                         for (int i = 0; i < _rawData.Struct.shifterToggle.Length; i++)
                             selectors += (int)Math.Pow(2, (double)i) * ((int)Math.Pow(2, (double)_rawData.Struct.shifterToggle[i]) - 1);
-                    if (SelectorCount > 0 || selectors >= SelectorCount)
+                    if (SelectorCount > 0 && selectors >= SelectorCount)
                         selectors = SelectorCount - 1;
                 }
                 return selectors;
@@ -572,7 +583,18 @@ namespace Funbit.Ets.Telemetry.Server.Data
             int i = selectorCount * slot + selector;
             Selector = (int)rawData.Struct.hshifterBitmask[i];
             Gear = rawData.Struct.hshifterResulting[i];
-            GearName = (Gear < 0) ? rvGearNames[Math.Abs(Gear)] : fwGearNames[Gear];
+            GearName = "Unknow";
+            if (Gear < 0)
+            {
+                if (Math.Abs(Gear) < rvGearNames.Length)
+                    GearName = rvGearNames[Math.Abs(Gear)];
+            }
+            else
+            {
+                if (Gear < fwGearNames.Length)
+                    GearName = fwGearNames[Gear];
+
+            }
         }
         public int Selector { get; private set; }
         public int Gear { get; set; }
