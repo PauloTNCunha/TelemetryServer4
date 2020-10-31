@@ -463,13 +463,14 @@ Funbit.Ets.Telemetry.Dashboard.prototype.filter = function (data, utils) {
 
     //message += 'Slot: ' + data.shifter.slot + '/' + data.shifter.slotCount + lb;
     //message += 'Selector: ' + data.shifter.selector + '/' + data.shifter.selectorCount + lb;
-    //message += 'Gear: ' + data.shifter.slots[data.shifter.slot].seletors[data.shifter.selector].gearName + lb;
-    //message += 'Best Gear: ' + data.shifter.bestGearName + lb;
+    //message += 'RPM: ' + Math.round(data.truck.engineRpm) + lb;
+    //message += 'Gear: ' + data.shifter.gear + lb;
+    //message += 'Best Gear: ' + data.shifter.bestGear + lb;
+    data.bestGear = "";
     if (data.truck.engineOn === true)
-        if ((data.truck.engineRpm > 600 && data.truck.engineRpm < 1000) || data.truck.engineRpm > 1500)
-            if (data.shifter.gear !== data.shifter.bestGear) {
-                data.bestGear = ((data.shifter.gear < data.shifter.bestGear) ? "▼" : "▲") + data.shifter.bestGearName;
-            }
+        if ((data.truck.engineRpm > 800 && data.truck.engineRpm < 1000) || data.truck.engineRpm > 1500)
+            if (data.shifter.gear !== data.shifter.bestGear) 
+                data.bestGear = ((data.shifter.gear > data.shifter.bestGear) ? "▼" : "▲") + data.shifter.bestGearName;
     if (data.truck.retarderBrake > 0)
         message += 'Retarder: ' + data.truck.retarderBrake + '/' + data.truck.retarderStepCount + lb;
     if (data.truck.speed > 10 && data.truck.lightsParkingOn === false)
