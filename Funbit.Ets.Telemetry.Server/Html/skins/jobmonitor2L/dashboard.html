@@ -10,6 +10,24 @@
             </table>
             <table class="Principal">
                 <tr class="Principal" title="Navigation">
+                    <td class="PrincipalDestiny">
+                        <svg width="490"
+                             height="145"
+                             viewBox="0 0 490 145">
+                            <g>
+                                <path style="fill:#7f0000;"
+                                      d="M 51.3125 10.613281 C 26.514438 10.613281 1.7167969 26.990477 1.7167969 59.748047 C 1.8430639 93.655522 51.167969 134.1582 51.167969 134.1582 C 51.167969 134.1582 100.9082 89.236107 100.9082 59.748047 C 100.9082 26.990477 76.110562 10.613281 51.3125 10.613281 z M 51.050781 36.232422 A 23.571428 23.571428 0 0 1 74.623047 59.802734 A 23.571428 23.571428 0 0 1 51.050781 83.375 A 23.571428 23.571428 0 0 1 27.480469 59.802734 A 23.571428 23.571428 0 0 1 51.050781 36.232422 z " />
+                                <text x="100"
+                                      y="80%"
+                                      textLength="360"
+                                      lengthAdjust="spacingAndGlyphs"
+                                      class="job-destinationCity" />
+                            </g>
+                        </svg>
+                    </td>
+                    <td class="PrincipalDistance">
+                        <span class="navigation-estimatedDistance" title="Navigation" />
+                    </td>
                     <td class="PrincipalFatigue" title="Progress">
                         <svg viewBox="0 0 200 100"
                              height="200"
@@ -60,70 +78,9 @@
                     <td class="PrincipalFatigue" title="Progress">
                         <span class="driverFatigueTime" />
                     </td>
-                    <td class="PrincipalDestiny">
-                        <svg width="490"
-                             height="145"
-                             viewBox="0 0 490 145">
-                            <g>
-                                <path style="fill:#7f0000;"
-                                      d="M 51.3125 10.613281 C 26.514438 10.613281 1.7167969 26.990477 1.7167969 59.748047 C 1.8430639 93.655522 51.167969 134.1582 51.167969 134.1582 C 51.167969 134.1582 100.9082 89.236107 100.9082 59.748047 C 100.9082 26.990477 76.110562 10.613281 51.3125 10.613281 z M 51.050781 36.232422 A 23.571428 23.571428 0 0 1 74.623047 59.802734 A 23.571428 23.571428 0 0 1 51.050781 83.375 A 23.571428 23.571428 0 0 1 27.480469 59.802734 A 23.571428 23.571428 0 0 1 51.050781 36.232422 z " />
-                                <text x="100"
-                                      y="80%"
-                                      textLength="360"
-                                      lengthAdjust="spacingAndGlyphs"
-                                      class="job-destinationCity" />
-                            </g>
-                        </svg>
-                    </td>
-                    <td class="PrincipalDistance">
-                        <span class="navigation-estimatedDistance" title="Navigation" />
-                    </td>
 
                 </tr>
                 <tr class="Principal">
-                    <td class="PrincipalSpeed" title="Progress">
-                        <svg width="400"
-                             height="290"
-                             viewBox="0 0 400 290">
-                            <defs>
-                                <linearGradient id="GradMostrador"
-                                                x1="100"
-                                                y1="270"
-                                                x2="300"
-                                                y2="270"
-                                                gradientUnits="userSpaceOnUse"
-                                                spreadMethod="pad">
-                                    <stop offset="0"
-                                          style="stop-color:#c00000;stop-opacity:1" />
-                                    <stop offset="0.45"
-                                          style="stop-color:#700000;stop-opacity:1" />
-                                    <stop offset="0.55"
-                                          style="stop-color:#007000;stop-opacity:1" />
-                                    <stop offset="1"
-                                          style="stop-color:#00c000;stop-opacity:1" />
-                                </linearGradient>
-                            </defs>
-                            <g transform="translate(0,20)">
-                                <path style="fill:url(#GradMostrador)"
-                                      d="m 200.02312,-0.00542889 c -110.480319,0 -200.04231215,86.35052489 -200.04231215,192.86932889 0.07971772,26.21572 6.49753455,53.84531 17.31869015,77.14771 -4.299257,-14.6645 -7.287111,-32.25723 -7.3165739,-48.21732 0,-101.19287 85.0838929,-183.22586 190.0401959,-183.22586 104.95629,0 190.04019,82.03299 190.04019,183.22586 -0.0681,16.45022 -2.81478,32.32779 -7.41394,48.16922 11.19167,-24.44583 17.37378,-50.37828 17.41606,-77.09961 0,-106.518804 -89.56202,-192.86932889 -200.04231,-192.86932889 z" />
-                            </g>
-                            <g transform="translate(0,20)"
-                               style="display:inline">
-                                <text x="50"
-                                      y="240"
-                                      textLength="290"
-                                      lengthAdjust="spacingAndGlyphs"
-                                      class="navigation-minimalSpeed" />
-                                <text x="200"
-                                      y="260"
-                                      text-anchor="middle"
-                                      class="velUnit" />
-                            </g>
-                        </svg>
-                    </td>
-                    <td id="PrincipalRemaining" class="PrincipalRemaining" title="Navigation">
-                        <span class="jobRemainingTime" />
-                    </td>
                     <td class="PrincipalDamage" colspan="2" align="center" title="Damage">
                         <svg width="1000"
                              height="286"
@@ -374,6 +331,49 @@
                                   style="text-anchor:end" />
                         </svg>
                     </td>
+                    <td class="PrincipalSpeed" title="Progress">
+                        <svg width="400"
+                             height="290"
+                             viewBox="0 0 400 290">
+                            <defs>
+                                <linearGradient id="GradMostrador"
+                                                x1="100"
+                                                y1="270"
+                                                x2="300"
+                                                y2="270"
+                                                gradientUnits="userSpaceOnUse"
+                                                spreadMethod="pad">
+                                    <stop offset="0"
+                                          style="stop-color:#c00000;stop-opacity:1" />
+                                    <stop offset="0.45"
+                                          style="stop-color:#700000;stop-opacity:1" />
+                                    <stop offset="0.55"
+                                          style="stop-color:#007000;stop-opacity:1" />
+                                    <stop offset="1"
+                                          style="stop-color:#00c000;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0,20)">
+                                <path style="fill:url(#GradMostrador)"
+                                      d="m 200.02312,-0.00542889 c -110.480319,0 -200.04231215,86.35052489 -200.04231215,192.86932889 0.07971772,26.21572 6.49753455,53.84531 17.31869015,77.14771 -4.299257,-14.6645 -7.287111,-32.25723 -7.3165739,-48.21732 0,-101.19287 85.0838929,-183.22586 190.0401959,-183.22586 104.95629,0 190.04019,82.03299 190.04019,183.22586 -0.0681,16.45022 -2.81478,32.32779 -7.41394,48.16922 11.19167,-24.44583 17.37378,-50.37828 17.41606,-77.09961 0,-106.518804 -89.56202,-192.86932889 -200.04231,-192.86932889 z" />
+                            </g>
+                            <g transform="translate(0,20)"
+                               style="display:inline">
+                                <text x="50"
+                                      y="240"
+                                      textLength="290"
+                                      lengthAdjust="spacingAndGlyphs"
+                                      class="navigation-minimalSpeed" />
+                                <text x="200"
+                                      y="260"
+                                      text-anchor="middle"
+                                      class="velUnit" />
+                            </g>
+                        </svg>
+                    </td>
+                    <td id="PrincipalRemaining" class="PrincipalRemaining" title="Navigation">
+                        <span class="jobRemainingTime" />
+                    </td>
                 </tr>
                 <tr class="Principal">
                     <td class="PrincipalSpeedLimit" title="Unit">
@@ -402,6 +402,8 @@
                                 <path d="m 89.056597,278.98231 c 0,-7.88576 -0.08509,-8.07666 -3.6,-8.07666 -5.287574,0 -3.005608,-1.3739 16.600003,-9.99431 13.44713,-5.91259 17.66666,-8.35358 17.66666,-10.22012 0,-1.7542 -0.99029,-2.45224 -3.47892,-2.45224 -3.15147,0 -2.8691,-0.41959 3,-4.45781 6.44959,-4.43762 6.48072,-4.49498 6.87588,-12.66667 0.34418,-7.11753 -0.79093,-8.12624 3,-8.20885 3.14814,-0.0686 2.60304,0.93902 2.60304,6.15334 0,6.07001 0.0406,6.12695 3,4.2038 9.00809,-5.85392 7.28991,-6.20123 23.75641,4.80202 12.39395,8.28189 14.54547,10.17417 11.56802,10.17417 -3.3785,0 -3.18606,0.46615 -3.18606,5.39229 0,2.93334 -0.15672,5.27438 0.22825,5.27438 0.38498,0 4.88812,-2.10913 10.00699,-4.68695 l 9.30703,-4.68694 13.65969,6.19561 c 15.58605,7.06937 17.71986,8.51161 12.59301,8.51161 h -3.6 v 11.41382 l -0.11792,10.8242 -4.88208,0.1758 c -5.60051,0.20167 -4.93559,0.73836 -4.94744,-4.08048 0.0468,-3.26753 -0.42487,-3.66667 -4.33333,-3.66667 -3.98433,0 -4.3859,0.36623 -4.3859,4 v 4 H 169.0566 147.72326 v -6 c 0,-5.77778 -0.14814,-6 -4,-6 -3.85185,0 -4,0.22222 -4,6 v 6 H 127.0566 114.38993 v -5.33333 -5.33334 l -7,-8.7e-4 -7,-8.8e-4 v 5.00088 c 0,5.93254 0.88157,4.93709 -5.666666,5.41087 l -5.666667,0.41 z m 91.646233,-10.07666 c 0,-4.2963 0.0363,-4.66667 -3.64623,-4.66667 -3.50327,0 -3.35142,0.76395 -3.35142,4.07259 0,4.58892 0.20205,5.26075 4.24031,5.26075 2.66666,0 2.75734,-0.66667 2.75734,-4.66667 z m 17.33333,0 c 0,-4.2963 0.0363,-4.66667 -3.64623,-4.66667 -3.68254,0 -4,0.37037 -4,4.66667 0,4.29629 0.31746,4.66667 4,4.66667 3.68254,0 3.64623,-0.37038 3.64623,-4.66667 z m -59.64623,-8.75115 c -0.38384,-6.75132 -0.0792,-7.51288 -4.33333,-7.66666 -4.21762,0.40665 -4.34401,0.60235 -4.73325,7.32836 -0.14132,7.0332 -0.0221,7.26314 4,7.45329 4.98288,-0.1812 5.00267,-0.40055 5.06658,-7.11499 z m 16,-0.24885 c 0,-7.62963 -0.0193,-7.66667 -4,-7.66667 -3.98067,0 -4,0.037 -4,7.66667 0,7.62963 0.0193,7.66667 4,7.66667 3.98068,0 4,-0.037 4,-7.66667 z" />
                             </g>
                         </svg>
+                        <br />
+                        <div class="BestGear"><span class="bestGear" /></div>
                     </td>
                     <td class="Principal" colspan="3">
                         <div id="PrincipalMessage" class="PrincipalMessage"><span class="message" /></div>

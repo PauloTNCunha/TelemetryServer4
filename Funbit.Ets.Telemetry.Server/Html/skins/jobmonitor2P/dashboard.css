@@ -193,7 +193,11 @@ div.PrincipalMessage {
     overflow-y: auto;
     overflow-x: hidden;
 }
-
+div.BestGear {
+    color: #edb02f;
+    font-size: 150px;
+    font-weight: bold;
+}
 .driverFatigueTime,
 .jobRemainingTime {
     font-size: 180px;

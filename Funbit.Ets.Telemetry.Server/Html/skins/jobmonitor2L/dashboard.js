@@ -2,7 +2,7 @@
 // Funbit for his clean to read program and very smart way to use the SCS telemetry API: https://github.com/Funbit/ets2-telemetry-server/releases/tag/3.2.5
 // Mike for porting the Telemetry server to SCS SDK 1.10: https://github.com/mike-koch/ets2-telemetry-server/releases/tag/4.0.0
 // Jianqun for his amazing T Dashboard skin: https://forum.scssoft.com/viewtopic.php?f=34&t=250736#p861086. Thanks for the class, you'll see bits and pieces of your work in my coding.
-// 
+// Trinity4u for teaching me the physics of transmissions and speeds and how to use localStorage.
 
 //skinConfig - a copy of the skin configuration from config.json
 //data - same data object as in the filter function
@@ -51,7 +51,6 @@ var tWeeday = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 var zDay;           //day zero 
 var jobWoT;
 var deadlineTimeEM;
-var gameTime;
 var actualTable = document.getElementById('Principal');
 var driverWorkTime;
 var driverSleepTime;
@@ -253,7 +252,6 @@ unitConverter = function (value) {
 
 var trucklLicensePlate;
 var truckWheelCount;
-var truckWearWheels;
 var truckActiveWheels;
 SetTruck = function (data) {
     if (trucklLicensePlate === data.truck.licensePlate && truckWheelCount === data.truck.wheelCount)
@@ -309,7 +307,6 @@ SetTruck = function (data) {
 };
 
 var trailer0LicensePlate;
-var trailerWearWheels;
 var trailerWheelCount;
 var trailerActiveWheels;
 SetTrailer = function (data) {
@@ -468,10 +465,15 @@ Funbit.Ets.Telemetry.Dashboard.prototype.filter = function (data, utils) {
     //message += 'Selector: ' + data.shifter.selector + '/' + data.shifter.selectorCount + lb;
     //message += 'Gear: ' + data.shifter.slots[data.shifter.slot].seletors[data.shifter.selector].gearName + lb;
     //message += 'Best Gear: ' + data.shifter.bestGearName + lb;
-    if (data.shifter.gear !== data.shifter.bestGear)
-        message += 'Best Gear: ' + data.shifter.bestGearName + lb;
+    if (data.truck.engineOn === true)
+        if ((data.truck.engineRpm > 600 && data.truck.engineRpm < 1000) || data.truck.engineRpm > 1500)
+            if (data.shifter.gear !== data.shifter.bestGear) {
+                data.bestGear = ((data.shifter.gear < data.shifter.bestGear) ? "▼" : "▲") + data.shifter.bestGearName;
+            }
     if (data.truck.retarderBrake > 0)
         message += 'Retarder: ' + data.truck.retarderBrake + '/' + data.truck.retarderStepCount + lb;
+    if (data.truck.speed > 10 && data.truck.lightsParkingOn === false)
+        message += 'Turn the lights on' + lb;
 
     if (data.game.connected === true) {
         SetTruck(data);
