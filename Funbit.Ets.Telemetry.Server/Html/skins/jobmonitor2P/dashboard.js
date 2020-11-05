@@ -464,17 +464,18 @@ Funbit.Ets.Telemetry.Dashboard.prototype.filter = function (data, utils) {
     //message += 'Slot: ' + data.shifter.slot + '/' + data.shifter.slotCount + lb;
     //message += 'Selector: ' + data.shifter.selector + '/' + data.shifter.selectorCount + lb;
     //message += 'RPM: ' + Math.round(data.truck.engineRpm) + lb;
+    //message += 'Speed: ' + Math.round(data.truck.speed) + lb;
     //message += 'Gear: ' + data.shifter.gear + lb;
     //message += 'Best Gear: ' + data.shifter.bestGear + lb;
     data.bestGear = "";
     if (data.truck.engineOn === true)
-        if ((data.truck.engineRpm > 800 && data.truck.engineRpm < 1000) || data.truck.engineRpm > 1500)
-            if (data.shifter.gear !== data.shifter.bestGear) 
+        if (data.truck.engineRpm < 1000 || data.truck.engineRpm > 1500)
+            if (data.shifter.gear !== data.shifter.bestGear)
                 data.bestGear = ((data.shifter.gear > data.shifter.bestGear) ? "▼" : "▲") + data.shifter.bestGearName;
+
     if (data.truck.retarderBrake > 0)
         message += 'Retarder: ' + data.truck.retarderBrake + '/' + data.truck.retarderStepCount + lb;
-    if (data.truck.speed > 10 && data.truck.lightsParkingOn === false)
-        message += 'Turn the lights on' + lb;
+
 
     if (data.game.connected === true) {
         SetTruck(data);
@@ -669,6 +670,10 @@ Funbit.Ets.Telemetry.Dashboard.prototype.filter = function (data, utils) {
     data.truck.estimatedFuelRange = fuelConsumption === 0 ? 0 : Math.round(data.truck.fuel / fuelConsumption);
 
     //WARNINGS
+    //warning lights are off
+    if (data.truck.speed > 10 && data.truck.lightsParkingOn === false)
+        message += 'Turn the lights on' + lb;
+
     //warning truck speed
     var vTop = 5; //unit === 'km' ? 5 : 3;
     if (data.navigation.speedLimit > 0) {

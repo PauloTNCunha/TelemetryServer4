@@ -11,6 +11,7 @@
                     this.nextRestStopTime = "";
                     this.version = "";
                     this.telemetryPluginVersion = "";
+                    this.telemetryServerVersion = "";
                     this.maxTrailerCount = "";
                 }
                 return Ets2Game;

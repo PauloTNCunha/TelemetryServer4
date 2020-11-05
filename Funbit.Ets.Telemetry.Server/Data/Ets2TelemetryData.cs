@@ -526,7 +526,6 @@ namespace Funbit.Ets.Telemetry.Server.Data
                 return selectors;
             }
         }
-
         public int BestGear   // Needs a lot of work.
         { 
             get 
@@ -542,7 +541,7 @@ namespace Funbit.Ets.Telemetry.Server.Data
                     {
                         if (gap > Math.Abs(array[i] + 1300))
                         {
-                            r = i;
+                            r = -i;
                             gap = Math.Abs(array[i] + 1300);
                         }
                     }
