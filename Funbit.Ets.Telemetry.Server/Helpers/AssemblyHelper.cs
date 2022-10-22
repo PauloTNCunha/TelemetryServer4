@@ -10,7 +10,7 @@ namespace Funbit.Ets.Telemetry.Server.Helpers
             {
                 FileVersionInfo versionInfo = FileVersionInfo.GetVersionInfo(
                     Process.GetCurrentProcess().MainModule.FileName);
-                string version = $"{versionInfo.FileMajorPart}.{versionInfo.FileMinorPart}.{versionInfo.ProductBuildPart}";
+                string version = $"{versionInfo.ProductVersion}";
                 return version;
             }
         }

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="1050"
+   height="150"
+   viewBox="0 0 1050 150"
+   id="NewTruck">
+
+  <defs
+     id="defs" />
+  <g
+     id="Truck"
+     style="display:inline">
+    <rect
+       id="TruckCab"
+       style="fill:#a0a0a0"
+       width="160"
+       height="100"
+       x="0"
+       y="0" />
+    <rect
+       id="TruckStart"
+       style="fill:#a0a0a0"
+       width="10"
+       height="30"
+       x="0"
+       y="100" />
+    <rect
+       id="TruckBase"
+       style="fill:#a0a0a0"
+       width="235"
+       height="5"
+       x="10"
+       y="100" />
+    <rect
+       id="TruckEnd"
+       style="fill:#a0a0a0"
+       width="10"
+       height="30"
+       x="245"
+       y="100" />
+    <g
+       id="TruckWheels"
+       style="display:inline">
+      <circle
+         id="TruckWheel0"
+         style="fill:#a0a0a0"
+         cx="35"
+         cy="130"
+         r="20" />
+      <path
+         id="TruckWheel0Fender"
+         style="fill:#a0a0a0"
+         d="m 10,105 v 25 h 1 a 24,24 0 0 1 24,-24 24,24 0 0 1 24,24 h 1 v -25 z" />
+      <rect
+         id="TruckWheel0Extention"
+         style="fill:#a0a0a0"
+         width="75"
+         height="25"
+         x="60"
+         y="105" />
+      <circle
+         id="TruckWheel1"
+         style="fill:#a0a0a0"
+         cx="160"
+         cy="130"
+         r="20" />
+      <path
+         id="TruckWheel1Fender"
+         style="fill:#a0a0a0"
+         d="m 135,105 v 25 h 1 a 24,24 0 0 1 24,-24 24,24 0 0 1 24,24 h 1 v -25 z" />
+      <rect
+         id="TruckWheel1Extention"
+         style="fill:#a0a0a0"
+         width="5"
+         height="25"
+         x="185"
+         y="105" />
+      <circle
+         id="TruckWheel2"
+         style="fill:#a0a0a0"
+         cx="215"
+         cy="130"
+         r="20" />
+      <path
+         id="TruckWheel2Fender"
+         style="fill:#a0a0a0"
+         d="m 190,105 v 25 h 1 a 24,24 0 0 1 24,-24 24,24 0 0 1 24,24 h 1 v -25 z" />
+      <rect
+         id="TruckWheel2Extention"
+         style="fill:#a0a0a0"
+         width="5"
+         height="25"
+         x="240"
+         y="105" />
+    </g>
+  </g>
+  <g
+     id="Trailer"
+     style="display:inline">
+    <rect
+       id="TrailerHook"
+       style="fill:#a0a0a0"
+       width="605"
+       height="5"
+       x="160"
+       y="95" />
+    <rect
+       id="TrailerStart"
+       style="fill:#a0a0a0"
+       width="35"
+       height="35"
+       x="265"
+       y="100" />
+    <rect
+       id="TrailerBase"
+       style="fill:#a0a0a0"
+       width="465"
+       height="15"
+       x="300"
+       y="100" />
+    <rect
+       id="TrailerEnd"
+       style="fill:#a0a0a0"
+       width="10"
+       height="40"
+       x="765"
+       y="95" />
+    <rect
+       id="TrailerDeck"
+       style="fill:#a0a0a0"
+       width="130"
+       height="35"
+       x="165"
+       y="60" />
+    <g
+       id="TrailerWheels"
+       style="display:inline">
+      <circle
+         id="TrailerWheel0"
+         style="fill:#a0a0a0"
+         cx="320"
+         cy="135"
+         r="15" />
+      <path
+         id="TrailerWheel0Fender"
+         style="fill:#a0a0a0"
+         d="m 300,115 v 20 h 1 a 19,19 0 0 1 19,-19 19,19 0 0 1 19,19 h 1 v -20 z" />
+      <rect
+         id="TrailerWheel0Extention"
+         style="fill:#a0a0a0"
+         width="220"
+         height="20"
+         x="340"
+         y="115" />
+      <circle
+         id="TrailerWheel1"
+         style="fill:#a0a0a0"
+         cx="580"
+         cy="135"
+         r="15" />
+      <path
+         id="TrailerWheel1Fender"
+         style="fill:#a0a0a0"
+         d="m 560,115 v 20 h 1 a 19,19 0 0 1 19,-19 19,19 0 0 1 19,19 h 1 v -20 z" />
+      <rect
+         id="TrailerWheel1Extention"
+         style="fill:#a0a0a0"
+         width="15"
+         height="20"
+         x="600"
+         y="115" />
+      <circle
+         id="TrailerWheel2"
+         style="fill:#a0a0a0"
+         cx="635"
+         cy="135"
+         r="15" />
+      <path
+         id="TrailerWheel2Fender"
+         style="fill:#a0a0a0"
+         d="m 615,115 v 20 h 1 a 19,19 0 0 1 19,-19 19,19 0 0 1 19,19 h 1 v -20 z" />
+      <rect
+         id="TrailerWheel2Extention"
+         style="fill:#a0a0a0"
+         width="10"
+         height="20"
+         x="655"
+         y="115" />
+      <circle
+         id="TrailerWheel3"
+         style="fill:#a0a0a0"
+         cx="685"
+         cy="135"
+         r="15" />
+      <path
+         id="TrailerWheel3Fender"
+         style="fill:#a0a0a0"
+         d="m 665,115 v 20 h 1 a 19,19 0 0 1 19,-19 19,19 0 0 1 19,19 h 1 v -20 z" />
+      <rect
+         id="TrailerWheel3Extention"
+         style="fill:#a0a0a0"
+         width="15"
+         height="20"
+         x="705"
+         y="115" />
+      <circle
+         id="TrailerWheel4"
+         style="fill:#a0a0a0"
+         cx="740"
+         cy="135"
+         r="15" />
+      <path
+         id="TrailerWheel4Fender"
+         style="fill:#a0a0a0"
+         d="m 720,115 v 20 h 1 a 19,19 0 0 1 19,-19 19,19 0 0 1 19,19 h 1 v -20 z" />
+      <rect
+         id="TrailerWheel4Extention"
+         style="fill:#a0a0a0"
+         width="5"
+         height="20"
+         x="760"
+         y="115" />
+    </g>
+  </g>
+  <rect
+     id="Cargo"
+     style="fill:#a0a0a0"
+     width="465"
+     height="95"
+     x="300"
+     y="0"
+     ry="20"
+     rx="10" />
+</svg>

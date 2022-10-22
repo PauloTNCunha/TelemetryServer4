@@ -39,6 +39,8 @@ body {
     user-select: none;
     background-color: #0D222D;
     font-family: sans-serif;
+    color: #FFFFFF;
+	
  
 }
 ::-webkit-scrollbar {
@@ -143,6 +145,9 @@ td.PrincipalSpeedLimit {
     border-radius: 30px;
     text-align: center;
 }
+td.PrincipalDamage {
+    width: 3000px;
+}
 td.PrincipalDestiny,
 td.PrincipalDistance {
     text-align: left;
@@ -156,14 +161,12 @@ td.PrincipalDistance {
 }
 td.PrincipalFatigue {
     text-align: center;
+    fill: #00a000;
 }
 td.PrincipalSpeedLimit {
     vertical-align: top;
 }
 
-g.PrincipalFatigue {
-    fill: #00a000;
-}
 text.job-destinationCity {
     fill: #f0e6d2;
     text-anchor: start;
@@ -195,9 +198,18 @@ div.PrincipalMessage {
 }
 div.BestGear {
     color: #edb02f;
-    font-size: 150px;
+    font-size: 100px;
     font-weight: bold;
+    align-content: center;
 }
+g.lightsBeamHigh,
+g.lightsBeamLow,
+g.lightsAux,
+g.lightsBeacon,
+g.retarderBrake {
+    fill: #353535;
+}
+
 .driverFatigueTime,
 .jobRemainingTime {
     font-size: 180px;

@@ -461,21 +461,6 @@ Funbit.Ets.Telemetry.Dashboard.prototype.filter = function (data, utils) {
     }
     data.navigation.cityLimits = data.game.timeScale !== roadTimeScale ? 2 : 0;
 
-    //message += 'Slot: ' + data.shifter.slot + '/' + data.shifter.slotCount + lb;
-    //message += 'Selector: ' + data.shifter.selector + '/' + data.shifter.selectorCount + lb;
-    //message += 'RPM: ' + Math.round(data.truck.engineRpm) + lb;
-    //message += 'Speed: ' + Math.round(data.truck.speed) + lb;
-    //message += 'Gear: ' + data.shifter.gear + lb;
-    //message += 'Best Gear: ' + data.shifter.bestGear + lb;
-    data.bestGear = "";
-    if (data.truck.engineOn === true)
-        if (data.truck.engineRpm < 1000 || data.truck.engineRpm > 1500)
-            if (data.shifter.gear !== data.shifter.bestGear)
-                data.bestGear = ((data.shifter.gear > data.shifter.bestGear) ? "▼" : "▲") + data.shifter.bestGearName;
-
-    if (data.truck.retarderBrake > 0)
-        message += 'Retarder: ' + data.truck.retarderBrake + '/' + data.truck.retarderStepCount + lb;
-
 
     if (data.game.connected === true) {
         SetTruck(data);
@@ -544,31 +529,6 @@ Funbit.Ets.Telemetry.Dashboard.prototype.filter = function (data, utils) {
     var estTime = 0;
     var idleTime = 0;
     var overTime = 0;
-
-    //// at averange speed - not used anymore
-    //data.navigation.averageSpeed = '--';
-    //data.navigation.averageEstimatedTime = '?';
-    //data.navigation.averageStopsNeeded = '--';
-    //data.navigation.averageStopsAvailable = '--';
-    //data.navigation.averageRemainingTime = '?';
-    //data.navigation.averageLeavingTime = '?';
-    //if (data.navigation.estimatedDistance > 0) {
-    //    estTime = new Date(data.navigation.estimatedTime);
-    //    estTime = Math.round((estTime - zDay) / 60000);
-    //    idleTime = remTime - estTime;
-    //    overTime = estTime - resTime;
-    //    if (data.hasJob && estTime > 0) {
-    //        data.navigation.averageEstimatedTime = estTime;
-    //        data.navigation.averageSpeed = Math.round(3 * data.navigation.estimatedDistance / (50 * estTime));
-    //        data.navigation.averageStopsNeeded = overTime < 0 ? 0 : Math.ceil(overTime / driverWorkTime);
-    //        data.navigation.averageStopsAvailable = idleTime < 0 ? 0 : Math.floor(idleTime / driverSleepTime);
-    //        data.navigation.averageRemainingTime = idleTime - data.navigation.averageStopsNeeded * driverSleepTime;
-    //        if (overTime < 0) { overTime += driverWorkTime; }
-    //        data.navigation.averageLeavingTime = (driverWorkTime - overTime % driverWorkTime) % driverWorkTime;
-    //    }
-    //    data.realEstimatedTime = estTime / roadTimeScale;
-    //}
-
 
     // at actual speed
     data.navigation.actualSpeed = '--';
@@ -670,10 +630,6 @@ Funbit.Ets.Telemetry.Dashboard.prototype.filter = function (data, utils) {
     data.truck.estimatedFuelRange = fuelConsumption === 0 ? 0 : Math.round(data.truck.fuel / fuelConsumption);
 
     //WARNINGS
-    //warning lights are off
-    if (data.truck.speed > 10 && data.truck.lightsParkingOn === false)
-        message += 'Turn the lights on' + lb;
-
     //warning truck speed
     var vTop = 5; //unit === 'km' ? 5 : 3;
     if (data.navigation.speedLimit > 0) {
@@ -973,7 +929,7 @@ Funbit.Ets.Telemetry.Dashboard.prototype.filter = function (data, utils) {
     data.job.sourceCompany = data.job.sourceCompany === '' ? '--' : data.job.sourceCompany;
     data.job.destinationCompany = data.job.destinationCompany === '' ? '--' : data.job.destinationCompany;
     data.cargoDamage = isNaN(data.cargo.damage) ? '' : utils.formatFloat(data.cargo.damage, 2) + '‰';
-    data.cargo.damage = isNaN(data.cargo.damage) ? '--' : utils.formatFloat(data.cargo.damage, 2) + '‰';
+    data.cargo.damage = isNaN(data.cargo.damage) ? '--' : utils.formatFloat(data.cargo.damage, 4) + '‰';
     data.truckSum = isNaN(truckSum) ? '--' : utils.formatFloat(truckSum, 2) + '‰';
     data.trailerSum = isNaN(trailerSum) ? '--' : utils.formatFloat(trailerSum, 2) + '‰';
     data.trailerWearChassis = isNaN(data.trailerWearChassis) ? '--' : utils.formatFloat(data.trailerWearChassis, 2) + '‰';
@@ -987,17 +943,143 @@ Funbit.Ets.Telemetry.Dashboard.prototype.filter = function (data, utils) {
     data.driverFatigueTime = isNaN(data.driverFatigueTime) ? '--' : minsToReadableTime(data.driverFatigueTime, utils);
     data.jobRemainingTime = data.job.remainingTime;
 
+
+    data.bestGear = "";
+    if (data.truck.engineOn === true)
+        if ((data.truck.engineRpm > 700 && data.truck.engineRpm < 900) || data.truck.engineRpm > 1600)
+            if (data.shifter.gear !== data.shifter.bestGear)
+                data.bestGear = ((data.shifter.gear > data.shifter.bestGear) ? "▼" : "▲") + data.shifter.bestGearName;
+
+    //cityLimits
     if (data.navigation.cityLimits > 1 && actualTable === document.getElementById('Principal')) {
         $('g.cityLimits').css('visibility', 'visible');
     } else {
         $('g.cityLimits').css('visibility', 'hidden');
     }
 
+    //retarderBrake
+    //if (data.truck.retarderBrake > 0)
+    //    message += 'Retarder: ' + data.truck.retarderBrake + '/' + data.truck.retarderStepCount + lb;
+    if (data.truck.retarderBrake === 0) {
+        $('g.retarderBrake').css('fill', 'rgb(53,53,53)');
+    } else {
+        let d = (data.truck.retarderBrake / data.truck.retarderStepCount);
+        let r = Math.round(156 + 88 * d);
+        let g = Math.round(145 + 77 * d);
+        let b = Math.round( 72 - 72 * d);
+        $('g.retarderBrake').css('fill', 'rgb(' + r + ',' + g + ',' + b + ')');
+        //message += 'rgb(' + r + ',' + g + ',' + b + ')' + lb;
+    }
+
+    //lights
+    if (data.truck.speed > 10 && data.truck.lightsBeamLowOn === false)
+        message += 'Turn the lights on' + lb;
+    if (data.truck.lightsBeamLowOn && data.truck.lightsBeamHighOn) {
+        $('g.lightsBeamHigh').css('fill', '#edb02f');
+    } else {
+        $('g.lightsBeamHigh').css('fill', '#353535');
+    }
+    if (data.truck.lightsBeamLowOn) {
+        $('g.lightsBeamLow').css('fill', '#edb02f');
+    } else {
+        $('g.lightsBeamLow').css('fill', '#353535');
+    }
+    if (data.truck.lightsAuxFrontOn || data.truck.lightsAuxRoofOn) {
+        $('g.lightsAux').css('fill', '#edb02f');
+    } else {
+        $('g.lightsAux').css('fill', '#353535');
+    }
+    if (data.truck.lightsBeaconOn) {
+        $('g.lightsBeacon').css('fill', '#edb02f');
+    } else {
+        $('g.lightsBeacon').css('fill', '#353535');
+    }
+
     data.message = message;
     message = '';
-
+	
     return data;
 };
+
+PushDataAlternative = function (data) {
+    //Some cirilic data is falling to get on document. This will push data directly to ID.
+    document.getElementById('realNow0').innerHTML = data.realNow;
+	document.getElementById('realNow1').innerHTML = data.realNow;
+	document.getElementById('realNow2').innerHTML = data.realNow;
+	document.getElementById('realNow3').innerHTML = data.realNow;
+	document.getElementById('realNow4').innerHTML = data.realNow;
+
+	document.getElementById('realEstimatedTime0').innerHTML = data.realEstimatedTime;
+	document.getElementById('realEstimatedTime1').innerHTML = data.realEstimatedTime;
+	document.getElementById('realEstimatedTime2').innerHTML = data.realEstimatedTime;
+	document.getElementById('realEstimatedTime3').innerHTML = data.realEstimatedTime;
+	document.getElementById('realEstimatedTime4').innerHTML = data.realEstimatedTime;
+
+    document.getElementById('job-destinationCity0').innerHTML = data.job.destinationCity;
+    document.getElementById('navigation-estimatedDistance0').innerHTML = data.navigation.estimatedDistance;
+    document.getElementById('driveRestNumbers').innerHTML = data.driveRestNumbers;
+    document.getElementById('driverFatigueTime').innerHTML = data.driverFatigueTime;
+
+    document.getElementById('CargoDamage').innerHTML = data.cargoDamage;
+    document.getElementById('navigation-minimalSpeed0').innerHTML = data.navigation.minimalSpeed;
+    document.getElementById('jobRemainingTime').innerHTML = data.jobRemainingTime;
+
+    document.getElementById('navigation-speedLimit').innerHTML = data.navigation.speedLimit;
+    document.getElementById('bestGear').innerHTML = data.bestGear;
+
+    document.getElementById('PrincipalMessage').innerHTML = data.message;
+
+    document.getElementById('game-time').innerHTML = data.game.time;
+    document.getElementById('job-deadlineTime').innerHTML = data.job.deadlineTime;
+
+    document.getElementById('cargo-cargo').innerHTML = data.cargo.cargo;
+    document.getElementById('cargo-mass').innerHTML = data.cargo.mass;
+    document.getElementById('job-income').innerHTML = data.job.income;
+
+    document.getElementById('job-sourceCity').innerHTML = data.job.sourceCity;
+    document.getElementById('job-destinationCity1').innerHTML = data.job.destinationCity;
+    document.getElementById('job-sourceCompany').innerHTML = data.job.sourceCompany;
+    document.getElementById('job-destinationCompany').innerHTML = data.job.destinationCompany;
+
+    document.getElementById('navigation-estimatedDistance1').innerHTML = data.navigation.estimatedDistance;
+    document.getElementById('truck-estimatedFuelRange').innerHTML = data.truck.estimatedFuelRange;
+    document.getElementById('job-remainingTime').innerHTML = data.job.remainingTime;
+
+    document.getElementById('unit').innerHTML = data.unit;
+
+    document.getElementById('cargo-damage').innerHTML = data.cargo.damage;
+    document.getElementById('trailerWearChassis').innerHTML = data.trailerWearChassis;
+    document.getElementById('trailerWearWheels').innerHTML = data.trailerWearWheels;
+    document.getElementById('truck-wearEngine').innerHTML = data.truck.wearEngine;
+    document.getElementById('truck-wearTransmission').innerHTML = data.truck.wearTransmission;
+    document.getElementById('truck-wearCabin').innerHTML = data.truck.wearCabin;
+    document.getElementById('truck-wearChassis').innerHTML = data.truck.wearChassis;
+    document.getElementById('truck-wearWheels').innerHTML = data.truck.wearWheels;
+
+    document.getElementById('navigation-actualSpeed').innerHTML = data.navigation.actualSpeed;
+    document.getElementById('velUnit0').innerHTML = data.velUnit;
+    document.getElementById('navigation-actualEstimatedTime').innerHTML = data.navigation.actualEstimatedTime;
+    document.getElementById('navigation-actualStopsNeeded').innerHTML = data.navigation.actualStopsNeeded;
+    document.getElementById('navigation-actualStopsAvailable').innerHTML = data.navigation.actualStopsAvailable;
+    document.getElementById('navigation-actualRemainingTime').innerHTML = data.navigation.actualRemainingTime;
+    document.getElementById('navigation-actualLeavingTime').innerHTML = data.navigation.actualLeavingTime;
+
+    document.getElementById('navigation-minimalSpeed1').innerHTML = data.navigation.minimalSpeed;
+    document.getElementById('velUnit1').innerHTML = data.velUnit;
+    document.getElementById('navigation-minimalEstimatedTime').innerHTML = data.navigation.minimalEstimatedTime;
+    document.getElementById('navigation-minimalStopsNeeded').innerHTML = data.navigation.minimalStopsNeeded;
+    document.getElementById('navigation-minimalStopsAvailable').innerHTML = data.navigation.minimalStopsAvailable;
+    document.getElementById('navigation-minimalRemainingTime').innerHTML = data.navigation.minimalRemainingTime;
+    document.getElementById('navigation-minimalLeavingTime').innerHTML = data.navigation.minimalLeavingTime;
+
+    document.getElementById('navigation-newMinimalSpeed').innerHTML = data.navigation.minimalSpeed;
+    document.getElementById('velUnit2').innerHTML = data.velUnit;
+    document.getElementById('navigation-newMinimalEstimatedTime').innerHTML = data.navigation.newMinimalEstimatedTime;
+    document.getElementById('navigation-newMinimalStopsNeeded').innerHTML = data.navigation.newMinimalStopsNeeded;
+    document.getElementById('navigation-newMinimalStopsAvailable').innerHTML = data.navigation.newMinimalStopsAvailable;
+    document.getElementById('navigation-newMinimalRemainingTime').innerHTML = data.navigation.newMinimalRemainingTime;
+    document.getElementById('navigation-newMinimalLeavingTime').innerHTML = data.navigation.newMinimalLeavingTime;
+}
 
 Funbit.Ets.Telemetry.Dashboard.prototype.render = function (data, utils) {
 
